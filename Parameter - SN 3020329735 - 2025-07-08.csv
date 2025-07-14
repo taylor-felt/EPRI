@@ -1,0 +1,539 @@
+﻿Version,4,,,,,
+Language,en-US,,,,,
+Local export date,08.07.2025 10:49:24,,,,,
+Export UTC date,2025-07-08T17:49:24.296Z,,,,,
+Time zone,America/Los_Angeles,,,,,
+User name,admin,,,,,
+Level,Device,,,,,
+System ID,Plant:1,,,,,
+System name,SMA Lab SBSE,,,,,
+Device ID,SD2P:01cd-3020329735,,,,,
+Device name,SN 3020329735,,,,,
+Serial number of device,3020329735,,,,,
+,,,,,,
+Group,Name,Value,Translated value,Unit,Channel,Access
+User Rights,Set installer password,****,****,,Parameter.Acs.PwdIstl,RW
+User Rights,Set user password,****,****,,Parameter.Acs.PwdUsr,RW
+Battery,Battery nominal capacity,,,Wh,Parameter.Bat.CapacRtgWh,RO
+Battery,Battery type,4333,Battery type not specified,,Parameter.Bat.Typ,RW
+Battery,Batt. manuf's max. charge capac.,15000,15000,W,Parameter.BatConv.WMaxCha,RO
+Battery,Batt. manuf's max. disch. capac.,8064,8064,W,Parameter.BatConv.WMaxDsch,RO
+Battery,Batt. manuf's min. charge capac.,0,0,W,Parameter.BatConv.WMinCha,RO
+Battery,Batt. manuf's min. disch. capac.,0,0,W,Parameter.BatConv.WMinDsch,RO
+Battery,Width of the upper charging limit area,0,0,%,Parameter.BatUsDm.ChaProDmMax,RW
+Battery,Lower lmt deep disch. protect area prior shutdown,2,2,%,Parameter.BatUsDm.DschProDmLim,RW
+Battery,Minimum width of deep discharge protection area,6,6,%,Parameter.BatUsDm.DschProDmMin,RW
+AC Side,Limit for maximum continuous AC current in backup operation,33.7,33.7,A,Parameter.Bck.AMaxLim,RW
+AC Side,Upper limit for the charging state for derating of the PV inverters,95,95,%,Parameter.Bck.HiChaSttDrtInv,RW
+AC Side,Voltage monitoring lower maximum limit in backup operation,1.1,1.1,p.u.,Parameter.Bck.VolCtl.hLimPu,RW
+AC Side,Voltage monitoring lower max. threshold trip. time,200,200,ms,Parameter.Bck.VolCtl.hLimTmms,RW
+AC Side,Voltage in backup operation,120,120,V,Parameter.Bck.Vset,RW
+Device,Fan test,303,Off,,Parameter.Coolsys.FanTst,RW
+DC Side,Constant voltage setpoint,450,450,V,Parameter.DcCfg.ConstVolCtl.Vset[0],RW
+DC Side,Constant voltage setpoint,450,450,V,Parameter.DcCfg.ConstVolCtl.Vset[1],RW
+DC Side,Constant voltage setpoint,450,450,V,Parameter.DcCfg.ConstVolCtl.Vset[2],RW
+DC Side,Cycle time of SMA ShadeFix,360,360,s,Parameter.DcCfg.MPPShdw.CycTms,RW
+DC Side,SMA ShadeFix,1129,Yes,,Parameter.DcCfg.MPPShdw.IsOn,RW
+DC Side,Critical voltage to end feed-in,25,25,V,Parameter.DcCfg.StopVol[0],RW
+DC Side,Critical voltage to end feed-in,25,25,V,Parameter.DcCfg.StopVol[1],RW
+DC Side,Critical voltage to end feed-in,25,25,V,Parameter.DcCfg.StopVol[2],RW
+DC Side,Start delay input,1,1,s,Parameter.DcCfg.StrTms[0],RW
+DC Side,Minimum voltage input,66,66,V,Parameter.DcCfg.StrVol[0],RW
+DC Side,Minimum voltage input,66,66,V,Parameter.DcCfg.StrVol[1],RW
+DC Side,Minimum voltage input,66,66,V,Parameter.DcCfg.StrVol[2],RW
+DC Side,Maximum allowed voltage input,610,610,V,Parameter.DcCfg.VolLim,RW
+System communication,Device updates activated,1129,Yes,,Parameter.DevUpd.IsOn,RW
+Device,NTP server,,,,Parameter.DtTm.NtpSrv,RW
+Further Applications,FTP Push active,1130,No,,Parameter.FTPPush.IsOn,RW
+Further Applications,FTP Push Login,,,,Parameter.FTPPush.Login,RW
+Further Applications,FTP Push server Port,21,21,,Parameter.FTPPush.Port,RW
+Further Applications,FTP Push Password,****,****,,Parameter.FTPPush.Pwd,RW
+Further Applications,FTP Push server path,,,,Parameter.FTPPush.RemStoLcn,RW
+Further Applications,FTP Push Server Address,,,,Parameter.FTPPush.Srv,RW
+Further Applications,Cycle of FTP push upload,1189,daily,,Parameter.FTPPush.UpldCyc,RW
+Grid Monitoring,Country standard set,7674,[US] CA-R21 IEEE1547:2018 Cat.B III,,Parameter.GridGuard.Cntry,RO
+Grid Monitoring,"Islanding detection, permissible grid unbalance",50,50,%,Parameter.GridGuard.Cntry.Aid.AsymDet.AsymMax,RW
+Grid Monitoring,"Islanding detection, tripping time of the unbalance detection",5000,5000,ms,Parameter.GridGuard.Cntry.Aid.AsymDet.AsymMaxTmms,RW
+Grid Monitoring,"Islanding detection, status of the unbalance detection",303,Off,,Parameter.GridGuard.Cntry.Aid.AsymDet.Stt,RW
+Grid Monitoring,"Islanding detection, tripping time of the frequency monitor",2000,2000,ms,Parameter.GridGuard.Cntry.Aid.HzMon.HzMonTmms,RW
+Grid Monitoring,"Islanding detection, status of frequency monitor",308,On,,Parameter.GridGuard.Cntry.Aid.HzMon.Stt,RW
+Grid Monitoring,Tripping threshold DC current monitoring,1,1,A,Parameter.GridGuard.Cntry.AMaxOfs,RW
+Grid Monitoring,DC monitoring mode,4510,Tripping threshold DC current monitoring in %,,Parameter.GridGuard.Cntry.AMaxOfsMod,RW
+Grid Monitoring,Tripping threshold DC current monitoring,0.5,0.5,%,Parameter.GridGuard.Cntry.AMaxOfsNom,RW
+Grid Monitoring,Tripping time DC current monitoring for % tripping threshold,10000,10000,ms,Parameter.GridGuard.Cntry.AMaxOfsNomTmms,RW
+Grid Monitoring,Tripping time DC current monitoring,10000,10000,ms,Parameter.GridGuard.Cntry.AMaxOfsTmms,RW
+Grid Monitoring,"Frequency monitoring, max. frequency change per second",10,10,Hz/s,Parameter.GridGuard.Cntry.FrqCtl.ChgMax,RW
+Grid Monitoring,"Frequency monitoring, maximum frequency change tripping time",10000,10000,ms,Parameter.GridGuard.Cntry.FrqCtl.ChgMaxTmms,RW
+Grid Monitoring,Maximum connection frequency after restart,60.5,60.5,Hz,Parameter.GridGuard.Cntry.FrqCtl.ConnMax,RW
+Grid Monitoring,Minimum connection frequency after restart,59,59,Hz,Parameter.GridGuard.Cntry.FrqCtl.ConnMin,RW
+Grid Monitoring,"Frequency monitoring, lower maximum threshold",61.2,61.2,Hz,Parameter.GridGuard.Cntry.FrqCtl.hLim,RW
+Grid Monitoring,"Frequency monitoring, lower max. threshold trip. time",300000,300000,ms,Parameter.GridGuard.Cntry.FrqCtl.hLimTmms,RW
+Grid Monitoring,Frequency monitoring upper minimum threshold,58.5,58.5,Hz,Parameter.GridGuard.Cntry.FrqCtl.lLim,RW
+Grid Monitoring,"Frequency monitoring, upper min. threshold trip. time",300000,300000,ms,Parameter.GridGuard.Cntry.FrqCtl.lLimTmms,RW
+Grid Monitoring,Frequency monitoring upper maximum threshold,62,62,Hz,Parameter.GridGuard.Cntry.FrqCtl.Max,RW
+Grid Monitoring,Frequency monitoring upper max. threshold trip. time,160,160,ms,Parameter.GridGuard.Cntry.FrqCtl.MaxTmms,RW
+Grid Monitoring,"Frequency monitoring, lower minimum threshold",56.5,56.5,Hz,Parameter.GridGuard.Cntry.FrqCtl.Min,RW
+Grid Monitoring,"Frequency monitoring, lower min. threshold trip. time",160,160,ms,Parameter.GridGuard.Cntry.FrqCtl.MinTmms,RW
+Grid Monitoring,Maximum switching frequency,60.5,60.5,Hz,Parameter.GridGuard.Cntry.FrqCtl.ReconMax,RW
+Grid Monitoring,Maximum connection frequency after overfrequency disconnection,60.5,60.5,Hz,Parameter.GridGuard.Cntry.FrqCtl.ReconMaxFrqMax,RW
+Grid Monitoring,Minimum switching frequency,59,59,Hz,Parameter.GridGuard.Cntry.FrqCtl.ReconMin,RW
+Grid Monitoring,Frequency monitoring switchable max. threshold,66,66,Hz,Parameter.GridGuard.Cntry.FrqCtl.SwMax,RW
+Grid Monitoring,Frequency monit. switchable max. threshold tripping time,1000000,1000000,ms,Parameter.GridGuard.Cntry.FrqCtl.SwMaxTmms,RW
+Grid Monitoring,Frequency monitoring switchable min. threshold,44,44,Hz,Parameter.GridGuard.Cntry.FrqCtl.SwMin,RW
+Grid Monitoring,Frequency monit. switchable min. threshold tripping time,1000000,1000000,ms,Parameter.GridGuard.Cntry.FrqCtl.SwMinTmms,RW
+Grid Monitoring,Reconnection time after grid fault,20,20,s,Parameter.GridGuard.Cntry.GriFltMonTms,RW
+Grid Monitoring,Reconnection time upon short interruption,20,20,s,Parameter.GridGuard.Cntry.GriFltReConTms,RW
+Grid Monitoring,Maximum duration of a short interruption,3,3,s,Parameter.GridGuard.Cntry.GriFltTms,RW
+Grid Monitoring,Reconnection time upon restart,20,20,s,Parameter.GridGuard.Cntry.GriStrTms,RW
+Grid Monitoring,Nominal frequency,60,60,Hz,Parameter.GridGuard.Cntry.HzRtg,RW
+Grid Monitoring,Disconnection limit for leakage current,0.3,0.3,A,Parameter.GridGuard.Cntry.LeakAMax,RW
+Grid Monitoring,Minimum insulation resistance,120000,120000,Ohm,Parameter.GridGuard.Cntry.LeakRisMin,RW
+Grid Monitoring,Ground connection monitoring,303,Off,,Parameter.GridGuard.Cntry.PEOpnMon,RW
+Grid Monitoring,Maximum connection voltage after restart,1.05,1.05,p.u.,Parameter.GridGuard.Cntry.VolCtl.ConnMaxPu,RW
+Grid Monitoring,Minimum connection voltage after restart,0.917,0.917,p.u.,Parameter.GridGuard.Cntry.VolCtl.ConnMinPu,RW
+Grid Monitoring,"Voltage monitoring, median maximum threshold",1.1,1.1,p.u.,Parameter.GridGuard.Cntry.VolCtl.hhLimPu,RW
+Grid Monitoring,"Voltage monitoring, median max. threshold trip.time",13000,13000,ms,Parameter.GridGuard.Cntry.VolCtl.hhLimTmms,RW
+Grid Monitoring,"Voltage monitoring, lower maximum threshold",1.1,1.1,p.u.,Parameter.GridGuard.Cntry.VolCtl.hLimPu,RW
+Grid Monitoring,"Voltage monitoring, lower max. threshold trip. time",1000000,1000000,ms,Parameter.GridGuard.Cntry.VolCtl.hLimTmms,RW
+Grid Monitoring,"Voltage monitoring, upper minimum threshold",0.88,0.88,p.u.,Parameter.GridGuard.Cntry.VolCtl.lLimPu,RW
+Grid Monitoring,"Voltage monitoring, upper min. threshold trip. time",1000000,1000000,ms,Parameter.GridGuard.Cntry.VolCtl.lLimTmms,RW
+Grid Monitoring,"Voltage monitoring, median minimum threshold",0.88,0.88,p.u.,Parameter.GridGuard.Cntry.VolCtl.llLimPu,RW
+Grid Monitoring,"Voltage monitoring, median min. threshold trip.time",21000,21000,ms,Parameter.GridGuard.Cntry.VolCtl.llLimTmms,RW
+Grid Monitoring,"Voltage monitoring, peak voltage threshold",1.78,1.78,p.u.,Parameter.GridGuard.Cntry.VolCtl.MaxPeakPu,RW
+Grid Monitoring,"Voltage monitoring, peak voltage threshold tripping time",0.312,0.312,ms,Parameter.GridGuard.Cntry.VolCtl.MaxPeakTmms,RW
+Grid Monitoring,"Voltage monitoring, upper maximum threshold",1.2,1.2,p.u.,Parameter.GridGuard.Cntry.VolCtl.MaxPu,RW
+Grid Monitoring,"Voltage monitoring, upper max. threshold trip. time",160,160,ms,Parameter.GridGuard.Cntry.VolCtl.MaxPuTmms,RW
+Grid Monitoring,"Voltage monitoring, lower minimum threshold",0.5,0.5,p.u.,Parameter.GridGuard.Cntry.VolCtl.MinPu,RW
+Grid Monitoring,"Voltage monitoring, lower min. threshold trip. time",2000,2000,ms,Parameter.GridGuard.Cntry.VolCtl.MinTmms,RW
+Grid Monitoring,Max. voltage for reconnection,1.05,1.05,p.u.,Parameter.GridGuard.Cntry.VolCtl.ReconMaxPu,RW
+Grid Monitoring,Min. voltage for reconnection,0.917,0.917,p.u.,Parameter.GridGuard.Cntry.VolCtl.ReconMinPu,RW
+Grid Monitoring,Volt. increase prot.,2,2,p.u.,Parameter.GridGuard.Cntry.VolCtl.RproPu,RW
+Grid Monitoring,Voltage increase protection trigger time,10000,10000,ms,Parameter.GridGuard.Cntry.VolCtl.RproTmms,RW
+Grid Monitoring,Underlying country standard,7674,[US] CA-R21 IEEE1547:2018 Cat.B III,,Parameter.GridGuard.CntryBas,RO
+Grid Monitoring,Set country standard,undefined,undefined,,Parameter.GridGuard.CntrySet,RW
+AC Side,Grid type,18016,"240 V/120 V, split-phase and neutral conductor",,Parameter.GridMs.GriTyp,RW
+External Communication,Goose application ID,16384,16384,,Parameter.IecCfg.GoCfg.GoAppId,RW
+External Communication,Goose-Mac address,01:0C:CD:01:00:00,01:0C:CD:01:00:00,,Parameter.IecCfg.GoCfg.GoMacId,RW
+Device,AFCI switched on,1129,Yes,,Parameter.Inverter.AfciIsOn,RW
+System and device control,"External cos Ï† setting, fallback behavior",2507,Apply fallback values,,Parameter.Inverter.CtlComCfg.PFCtlCom.CtlComMssMod,RW
+System and device control,"External cos Ï† setpoint specification, fallback value of cos Ï† for active power output",1,1,,Parameter.Inverter.CtlComCfg.PFCtlCom.FlbPF,RW
+System and device control,"External cos Ï† setpoint specification, fallback value of the excitation type for active power output",1041,Overexcited,,Parameter.Inverter.CtlComCfg.PFCtlCom.FlbPFExt,RW
+System and device control,"External cos Ï† setting, fallback value of excitation type in case of active power draw",1041,Overexcited,,Parameter.Inverter.CtlComCfg.PFCtlCom.FlbPFExtIn,RW
+System and device control,"External cos Ï† setting, fallback value of cos Ï† in case of active power draw",1,1,,Parameter.Inverter.CtlComCfg.PFCtlCom.FlbPFIn,RW
+System and device control,"External cos-phi setpoint, timeout",600,600,s,Parameter.Inverter.CtlComCfg.PFCtlCom.TmsOutPrc,RW
+System and device control,"External reactive power setting, fallback behavior",2507,Apply fallback values,,Parameter.Inverter.CtlComCfg.VArCtlCom.CtlComMssMod,RW
+System and device control,"External reactive power setting, fallback value",0,0,%,Parameter.Inverter.CtlComCfg.VArCtlCom.FlbVArNom,RW
+System and device control,"External reactive power setpoint, activation of the ramp rate in fallback behavior",303,Off,,Parameter.Inverter.CtlComCfg.VArCtlCom.GraFlbMod,RW
+System and device control,"External reactive power setpoint, timeout",600,600,s,Parameter.Inverter.CtlComCfg.VArCtlCom.TmsOutPrc,RW
+System and device control,"External reactive power setpoint, ramp rate in fallback behavior",20,20,%/s,Parameter.Inverter.CtlComCfg.VArCtlCom.VArGraFlb,RW
+System and device control,"Q(V), fallback behavior for absent reference voltage setting",2507,Apply fallback values,,Parameter.Inverter.CtlComCfg.VArCtlVolCom.CtlComMssMod,RW
+System and device control,"Q(V), fallback of reference voltage",1,1,p.u.,Parameter.Inverter.CtlComCfg.VArCtlVolCom.FlbVolRefPu,RW
+System and device control,"Q(V), timeout for absent reference voltage setpoint",600,600,s,Parameter.Inverter.CtlComCfg.VArCtlVolCom.TmsOutPrc,RW
+System and device control,"External active power setting, fallback behavior",2506,Values maintained,,Parameter.Inverter.CtlComCfg.WCtlCom.CtlComMssMod,RW
+System and device control,Fallback of the limitation of the battery discharge.,0,0,W,Parameter.Inverter.CtlComCfg.WCtlCom.FlbBatWMax,RW
+System and device control,Fallback of the limitation of the battery charge.,0,0,W,Parameter.Inverter.CtlComCfg.WCtlCom.FlbBatWMin,RW
+System and device control,"External active power specification, fallback value as normalized maximum active power",100,100,%,Parameter.Inverter.CtlComCfg.WCtlCom.FlbWMaxNom,RW
+System and device control,"External active power specification, fallback value as normalized minimum active power",-100,-100,%,Parameter.Inverter.CtlComCfg.WCtlCom.FlbWMinNom,RW
+System and device control,"External active power setpoint, activation of the ramp rate in fallback behavior",303,Off,,Parameter.Inverter.CtlComCfg.WCtlCom.GraFlbMod,RW
+System and device control,"External active power setpoint, timeout",600,600,s,Parameter.Inverter.CtlComCfg.WCtlCom.TmsOutPrc,RW
+System and device control,"External active power setpoint, ramp rate in fallback behavior",20,20,%/s,Parameter.Inverter.CtlComCfg.WCtlCom.WGraFlb,RW
+System and device control,"External active power setting 2, fallback behavior",2506,Values maintained,,Parameter.Inverter.CtlComCfg.WCtlCom2.CtlComMssMod,RW
+System and device control,"External active power specification 2, fallback value as normalized maximum active power",100,100,%,Parameter.Inverter.CtlComCfg.WCtlCom2.FlbWMaxNom,RW
+System and device control,"External active power specification 2, fallback value as normalized minimum active power",-100,-100,%,Parameter.Inverter.CtlComCfg.WCtlCom2.FlbWMinNom,RW
+System and device control,"External active power setpoint 2, activation of the ramp rate in fallback behavior",303,Off,,Parameter.Inverter.CtlComCfg.WCtlCom2.GraFlbMod,RW
+System and device control,"External active power setpoint 2, timeout",600,600,s,Parameter.Inverter.CtlComCfg.WCtlCom2.TmsOutPrc,RW
+System and device control,"External active power setpoint 2, ramp rate in fallback behavior",20,20,%/s,Parameter.Inverter.CtlComCfg.WCtlCom2.WGraFlb,RW
+System and device control,"Dynamic grid support, long-term averaging time of the pre-fault voltage",60,60,s,Parameter.Inverter.DGSModCfg.AvLtTms,RW
+System and device control,"Dynamic grid support, short-term averaging time of the pre-fault voltage",1,1,s,Parameter.Inverter.DGSModCfg.AvStTms,RW
+System and device control,"Dynamic grid support, voltages to be used for voltage jump detection",4432,Outer conductor and phase voltage,,Parameter.Inverter.DGSModCfg.DGSFlCfg.AppVolStep,RW
+System and device control,"Dynamic grid support, reactive current static",4434,Zero at origin,,Parameter.Inverter.DGSModCfg.DGSFlCfg.ArGraMod,RW
+System and device control,"Dynamic grid support, k-factor of react. current stat. in neg. system",2,2,,Parameter.Inverter.DGSModCfg.DGSFlCfg.ArGraNegSeq,RW
+System and device control,"Dynamic grid support, k-factor of react. current stat. for undervolt.",2,2,,Parameter.Inverter.DGSModCfg.DGSFlCfg.ArGraSag,RW
+System and device control,"Dynamic grid support, k-factor of react. current stat. for overvolt.",2,2,,Parameter.Inverter.DGSModCfg.DGSFlCfg.ArGraSwell,RW
+System and device control,"Dynamic grid support, maximum reactive current in case of undervoltage",100,100,%,Parameter.Inverter.DGSModCfg.DGSFlCfg.ArMaxSag,RW
+System and device control,"Dynamic grid support, maximum reactive current in case of overvoltage",100,100,%,Parameter.Inverter.DGSModCfg.DGSFlCfg.ArMaxSwell,RW
+System and device control,"Dynamic grid support, maximum duration of providing reactive current",60000,60000,ms,Parameter.Inverter.DGSModCfg.DGSFlCfg.ArStrMaxTmms,RW
+System and device control,"Dynamic grid support, minimum duration of providing reactive current",0,0,ms,Parameter.Inverter.DGSModCfg.DGSFlCfg.ArStrMinTmms,RW
+System and device control,"Dynamic grid support, active current priority at apparent current limit",303,Off,,Parameter.Inverter.DGSModCfg.DGSFlCfg.AWattPrioEna,RW
+System and device control,"Dynamic grid support, overvoltage threshold for reactive current",1.1,1.1,p.u.,Parameter.Inverter.DGSModCfg.DGSFlCfg.DbVMaxPu,RW
+System and device control,"Dynamic grid support, undervoltage threshold for reactive current",0.9,0.9,p.u.,Parameter.Inverter.DGSModCfg.DGSFlCfg.DbVMinPu,RW
+System and device control,"Dynamic grid support, reactive current change rate after fault end",2500,2500,%/s,Parameter.Inverter.DGSModCfg.DGSFlCfg.FltEnd.ArGraMax,RW
+System and device control,"Dynamic grid support, time for providing reactive power after voltage leap",0,0,s,Parameter.Inverter.DGSModCfg.DGSFlCfg.FltEnd.ArMaxTms,RW
+System and device control,"Dynamic grid support, lag time in case of undervoltage",500,500,ms,Parameter.Inverter.DGSModCfg.DGSFlCfg.FltEnd.ArStopSagTmms,RW
+System and device control,"Dynamic grid support, lag time in case of overvoltage",500,500,ms,Parameter.Inverter.DGSModCfg.DGSFlCfg.FltEnd.ArStopSwellTmms,RW
+System and device control,"Dynamic grid support, active current change rate after fault end",2500,2500,%/s,Parameter.Inverter.DGSModCfg.DGSFlCfg.FltEnd.AWattGraMax,RW
+System and device control,"Dynamic grid support, voltage leap height",0.2,0.2,p.u.,Parameter.Inverter.DGSModCfg.DGSFlCfg.StepVolPu,RW
+System and device control,"Dynamic grid support, averaging for reactive current static",308,On,,Parameter.Inverter.DGSModCfg.DGSFlCfg.VRefArMod,RW
+System and device control,"Dynamic grid support, operating mode",1265,Limited dynamic grid support,,Parameter.Inverter.DGSModCfg.DGSMod,RW
+System and device control,"Dynamic grid support, hysteresis voltage",0.02,0.02,p.u.,Parameter.Inverter.DGSModCfg.HystVolPu,RW
+System and device control,"Dynamic grid support, reactive power dynamic after error end",303,Off,,Parameter.Inverter.DGSModCfg.VArDynEna,RW
+System and device control,"Dynamic grid support, averaging of threshold value detection",303,Off,,Parameter.Inverter.DGSModCfg.VRefThMod,RW
+System and device control,"Dynamic grid support, overvoltage threshold for zero current",1.1,1.1,p.u.,Parameter.Inverter.DGSModCfg.ZerCurOvVolPu,RW
+System and device control,"Dynamic grid support, delay time for residual current at overvoltage",0,0,ms,Parameter.Inverter.DGSModCfg.ZerCurOvVolTmms,RW
+System and device control,"Dynamic grid support, undervoltage threshold for zero current",0.5,0.5,p.u.,Parameter.Inverter.DGSModCfg.ZerCurUnVolPu,RW
+System and device control,"Dynamic grid support, delay time for residual current at undervoltage",0,0,ms,Parameter.Inverter.DGSModCfg.ZerCurUnVolTmms,RW
+Device,Flightrecorder selection,3889,General,,Parameter.Inverter.FliSel,RO
+AC Side,Grid type,undefined,undefined,,Parameter.Inverter.GriTyp,RW
+AC Side,Neutral conductor connected,1129,Yes,,Parameter.Inverter.NConn,RW
+AC Side,Phase assignment,402,Phases L1 and L2,,Parameter.Inverter.OutPhs,RW
+AC Side,Nominal cos Ï† PFMinQ1,0.8,0.8,,Parameter.Inverter.PFMinQ1,RW
+Type Label,Rated cos Ï† PFMinQ1Rtg,0.8,0.8,,Parameter.Inverter.PFMinQ1Rtg,RO
+AC Side,Nominal cos Ï† PFMinQ2,0.8,0.8,,Parameter.Inverter.PFMinQ2,RW
+Type Label,Rated cos Ï† PFMinQ2Rtg,0.8,0.8,,Parameter.Inverter.PFMinQ2Rtg,RO
+AC Side,Nominal cos Ï† PFMinQ3,0.8,0.8,,Parameter.Inverter.PFMinQ3,RW
+Type Label,Rated cos Ï† PFMinQ3Rtg,0.8,0.8,,Parameter.Inverter.PFMinQ3Rtg,RO
+AC Side,Nominal cos Ï† PFMinQ4,0.8,0.8,,Parameter.Inverter.PFMinQ4,RW
+Type Label,Rated cos Ï† PFMinQ4Rtg,0.8,0.8,,Parameter.Inverter.PFMinQ4Rtg,RO
+AC Side,Grid nominal voltage,240,240,V,Parameter.Inverter.PlntCtl.VRef,RW
+AC Side,Phase reference of grid nominal voltage,4430,Outer conductor voltage,,Parameter.Inverter.PlntCtl.VRefMod,RW
+Device,"Ripple control signal detection, damping of narrow-band support",0.05,0.05,,Parameter.Inverter.RplDet.NrwBndSprt.Dmp,RW
+Device,"Ripple control signal detection, amplification of narrow-band support",0,0,V/A,Parameter.Inverter.RplDet.NrwBndSprt.Gain,RW
+Device,"Ripple control signal detection, frequency of narrow-band support",1029,1029,Hz,Parameter.Inverter.RplDet.NrwBndSprt.Hz,RW
+AC Side,Nominal apparent power VAMaxIn,7680,7680,VA,Parameter.Inverter.VAMaxIn,RW
+Type Label,Rated apparent power VAMaxInRtg,7680,7680,VA,Parameter.Inverter.VAMaxInRtg,RO
+AC Side,Nominal apparent power VAMaxOut,7680,7680,VA,Parameter.Inverter.VAMaxOut,RW
+Type Label,Rated apparent power VAMaxOutRtg,7680,7680,VA,Parameter.Inverter.VAMaxOutRtg,RO
+System and device control,Soft start-up rate Q,1200,1200,%/min,Parameter.Inverter.VArGraConn,RW
+System and device control,Soft start-up Q,303,Off,,Parameter.Inverter.VArGraConnEna,RW
+System and device control,Voltage-dependent reactive power limitation,303,Off,,Parameter.Inverter.VArLimVolCfg.Ena,RW
+AC Side,Nominal reactive power VArMaxQ1,4620,4620,var,Parameter.Inverter.VArMaxQ1,RW
+Type Label,Rated reactive power VArMaxQ1Rtg,4620,4620,var,Parameter.Inverter.VArMaxQ1Rtg,RO
+AC Side,Nominal reactive power VArMaxQ2,4620,4620,var,Parameter.Inverter.VArMaxQ2,RW
+Type Label,Rated reactive power VArMaxQ2Rtg,4620,4620,var,Parameter.Inverter.VArMaxQ2Rtg,RO
+AC Side,Nominal reactive power VArMaxQ3,-4620,-4620,var,Parameter.Inverter.VArMaxQ3,RW
+Type Label,Rated reactive power VArMaxQ3Rtg,-4620,-4620,var,Parameter.Inverter.VArMaxQ3Rtg,RO
+AC Side,Nominal reactive power VArMaxQ4,-4620,-4620,var,Parameter.Inverter.VArMaxQ4,RW
+Type Label,Rated reactive power VArMaxQ4Rtg,-4620,-4620,var,Parameter.Inverter.VArMaxQ4Rtg,RO
+AC Side,Nominal reactive power VArMaxZerWQ1,4620,4620,var,Parameter.Inverter.VArMaxZerWQ1,RW
+AC Side,Nominal reactive power VArMaxZerWQ2,4620,4620,var,Parameter.Inverter.VArMaxZerWQ2,RW
+AC Side,Nominal reactive power VArMaxZerWQ3,-4620,-4620,var,Parameter.Inverter.VArMaxZerWQ3,RW
+AC Side,Nominal reactive power VArMaxZerWQ4,-4620,-4620,var,Parameter.Inverter.VArMaxZerWQ4,RW
+System and device control,"Reactive power mode, hysteresis time",2,2,s,Parameter.Inverter.VArModCfg.HystTms,RW
+System and device control,Capacitive resistance for impedance compensation,40000000,40000000,Ohm,Parameter.Inverter.VArModCfg.ImpCpn.CapacRis,RW
+System and device control,Inductive resistance for impedance compensation,0,0,Ohm,Parameter.Inverter.VArModCfg.ImpCpn.InducRis,RW
+System and device control,Impedance compensation switched on,1130,No,,Parameter.Inverter.VArModCfg.ImpCpn.IsOn,RW
+System and device control,Ohmic resistance for impedance compensation,0,0,Ohm,Parameter.Inverter.VArModCfg.ImpCpn.OhmRis,RW
+System and device control,Activation threshold for active power draw,5,5,%,Parameter.Inverter.VArModCfg.InWNomLimAct,RW
+System and device control,Deactivation threshold for active power draw,5,5,%,Parameter.Inverter.VArModCfg.InWNomLimDeAct,RW
+System and device control,Activation threshold for active power output,5,5,%,Parameter.Inverter.VArModCfg.OutWNomLimAct,RW
+System and device control,Deactivation threshold for active power output,5,5,%,Parameter.Inverter.VArModCfg.OutWNomLimDeAct,RW
+System and device control,"cos Ï† setting, limitation of change rate",303,Off,,Parameter.Inverter.VArModCfg.PFCfg.Dyn.VArGraEna,RW
+System and device control,"cos Ï† setting, decrease rate",1200,1200,%/s,Parameter.Inverter.VArModCfg.PFCfg.Dyn.VArGraNeg,RW
+System and device control,"cos Ï† setting, increase rate",1200,1200,%/s,Parameter.Inverter.VArModCfg.PFCfg.Dyn.VArGraPos,RW
+System and device control,"cos Ï† setting, nominal value filter",308,On,,Parameter.Inverter.VArModCfg.PFCfg.Dyn.VArTmEna,RW
+System and device control,"cos Ï† setting, setting time, nominal value filter",5,5,s,Parameter.Inverter.VArModCfg.PFCfg.Dyn.VArTms,RW
+System and device control,"cos Ï† setting, actual value filter for active power value",303,Off,,Parameter.Inverter.VArModCfg.PFCfg.Dyn.WFilTmEna,RW
+System and device control,"cos Ï† setting, actual value filter for active power value",1.5,1.5,s,Parameter.Inverter.VArModCfg.PFCfg.Dyn.WFilTms,RW
+System and device control,"Manual cos Ï† setting, excitation type in case of active power draw",1042,Underexcited,,Parameter.Inverter.VArModCfg.PFCnstCfg.PFExtIn,RW
+System and device control,"Manual cos Ï† setting, excitation type in case of active power generation",1042,Underexcited,,Parameter.Inverter.VArModCfg.PFCnstCfg.PFExtOut,RW
+System and device control,"Manual cos Ï† setting, cos Ï† nominal value in case of active power draw",1,1,,Parameter.Inverter.VArModCfg.PFCnstCfg.PFIn,RW
+System and device control,"Manual cos Ï† setting, cos Ï† nominal value in case of active power generation",1,1,,Parameter.Inverter.VArModCfg.PFCnstCfg.PFOut,RW
+System and device control,"cos Ï†(V), number of support points used",4,4,,Parameter.Inverter.VArModCfg.PFCtlVolCfg.Crv.NumPt,RW
+System and device control,"cos Ï†(V), cos Ï† nominal value",0.8,0.8,,Parameter.Inverter.VArModCfg.PFCtlVolCfg.Crv.PF[0],RW
+System and device control,"cos Ï†(V), cos Ï† nominal value",1,1,,Parameter.Inverter.VArModCfg.PFCtlVolCfg.Crv.PF[1],RW
+System and device control,"cos Ï†(V), cos Ï† nominal value",1,1,,Parameter.Inverter.VArModCfg.PFCtlVolCfg.Crv.PF[2],RW
+System and device control,"cos Ï†(V), cos Ï† nominal value",0.8,0.8,,Parameter.Inverter.VArModCfg.PFCtlVolCfg.Crv.PF[3],RW
+System and device control,"cos Ï†(V), excitation type",1041,Overexcited,,Parameter.Inverter.VArModCfg.PFCtlVolCfg.Crv.PFExt[0],RW
+System and device control,"cos Ï†(V), excitation type",1041,Overexcited,,Parameter.Inverter.VArModCfg.PFCtlVolCfg.Crv.PFExt[1],RW
+System and device control,"cos Ï†(V), excitation type",1042,Underexcited,,Parameter.Inverter.VArModCfg.PFCtlVolCfg.Crv.PFExt[2],RW
+System and device control,"cos Ï†(V), excitation type",1042,Underexcited,,Parameter.Inverter.VArModCfg.PFCtlVolCfg.Crv.PFExt[3],RW
+System and device control,"cos Ï†(V), voltage value",0.94,0.94,p.u.,Parameter.Inverter.VArModCfg.PFCtlVolCfg.Crv.VolPu[0],RW
+System and device control,"cos Ï†(V), voltage value",0.97,0.97,p.u.,Parameter.Inverter.VArModCfg.PFCtlVolCfg.Crv.VolPu[1],RW
+System and device control,"cos Ï†(V), voltage value",1.03,1.03,p.u.,Parameter.Inverter.VArModCfg.PFCtlVolCfg.Crv.VolPu[2],RW
+System and device control,"cos Ï†(V), voltage value",1.06,1.06,p.u.,Parameter.Inverter.VArModCfg.PFCtlVolCfg.Crv.VolPu[3],RW
+System and device control,"cos Ï†(V), tripping delay",0,0,s,Parameter.Inverter.VArModCfg.PFCtlVolCfg.Dyn.ActTms,RW
+System and device control,"cos Ï†(P), limitation of change rate",303,Off,,Parameter.Inverter.VArModCfg.PFCtlVolCfg.Dyn.VArGraEna,RW
+System and device control,"cos Ï†(V), decrease rate",1200,1200,%/s,Parameter.Inverter.VArModCfg.PFCtlVolCfg.Dyn.VArGraNeg,RW
+System and device control,"cos Ï†(V), increase rate",1200,1200,%/s,Parameter.Inverter.VArModCfg.PFCtlVolCfg.Dyn.VArGraPos,RW
+System and device control,"cos Ï†(V), nominal value filter",308,On,,Parameter.Inverter.VArModCfg.PFCtlVolCfg.Dyn.VArTmEna,RW
+System and device control,"cos Ï†(P), setting time, nominal value filter",10,10,s,Parameter.Inverter.VArModCfg.PFCtlVolCfg.Dyn.VArTms,RW
+System and device control,"cos Ï†(V), actual value filter for active power measured value",303,Off,,Parameter.Inverter.VArModCfg.PFCtlVolCfg.Dyn.WFilTmEna,RW
+System and device control,"cos Ï†(V), setting time, actual value filter",1.5,1.5,s,Parameter.Inverter.VArModCfg.PFCtlVolCfg.Dyn.WFilTms,RW
+System and device control,"cos Ï†(P), number of support points to be used",2,2,,Parameter.Inverter.VArModCfg.PFCtlWCfg.Crv.NumPt,RW
+System and device control,"cos Ï†(P), cos Ï† nominal value",1,1,,Parameter.Inverter.VArModCfg.PFCtlWCfg.Crv.PF[0],RW
+System and device control,"cos Ï†(P), cos Ï† nominal value",0.9,0.9,,Parameter.Inverter.VArModCfg.PFCtlWCfg.Crv.PF[1],RW
+System and device control,"cos Ï†(P), cos Ï† nominal value",0.9,0.9,,Parameter.Inverter.VArModCfg.PFCtlWCfg.Crv.PF[2],RW
+System and device control,"cos Ï†(P), cos Ï† nominal value",0.9,0.9,,Parameter.Inverter.VArModCfg.PFCtlWCfg.Crv.PF[3],RW
+System and device control,"cos Ï†(P), excitation type",1042,Underexcited,,Parameter.Inverter.VArModCfg.PFCtlWCfg.Crv.PFExt[0],RW
+System and device control,"cos Ï†(P), excitation type",1042,Underexcited,,Parameter.Inverter.VArModCfg.PFCtlWCfg.Crv.PFExt[1],RW
+System and device control,"cos Ï†(P), excitation type",1042,Underexcited,,Parameter.Inverter.VArModCfg.PFCtlWCfg.Crv.PFExt[2],RW
+System and device control,"cos Ï†(P), excitation type",1042,Underexcited,,Parameter.Inverter.VArModCfg.PFCtlWCfg.Crv.PFExt[3],RW
+System and device control,"cos Ï†(P), active power",50,50,%,Parameter.Inverter.VArModCfg.PFCtlWCfg.Crv.WNom[0],RW
+System and device control,"cos Ï†(P), active power",100,100,%,Parameter.Inverter.VArModCfg.PFCtlWCfg.Crv.WNom[1],RW
+System and device control,"cos Ï†(P), active power",100,100,%,Parameter.Inverter.VArModCfg.PFCtlWCfg.Crv.WNom[2],RW
+System and device control,"cos Ï†(P), active power",100,100,%,Parameter.Inverter.VArModCfg.PFCtlWCfg.Crv.WNom[3],RW
+System and device control,"cos Ï†(P), tripping delay",0,0,s,Parameter.Inverter.VArModCfg.PFCtlWCfg.Dyn.ActTms,RW
+System and device control,"cos Ï†(P), limitation of change rate",303,Off,,Parameter.Inverter.VArModCfg.PFCtlWCfg.Dyn.VArGraEna,RW
+System and device control,"cos Ï†(P), decrease rate",1200,1200,%/s,Parameter.Inverter.VArModCfg.PFCtlWCfg.Dyn.VArGraNeg,RW
+System and device control,"cos Ï†(P), increase rate",1200,1200,%/s,Parameter.Inverter.VArModCfg.PFCtlWCfg.Dyn.VArGraPos,RW
+System and device control,"cos Ï†(P), nominal value filter",308,On,,Parameter.Inverter.VArModCfg.PFCtlWCfg.Dyn.VArTmEna,RW
+System and device control,"cos Ï†(P), setting time, nominal value filter",10,10,s,Parameter.Inverter.VArModCfg.PFCtlWCfg.Dyn.VArTms,RW
+System and device control,"cos Ï†(P), actual value filter for active power measured value",303,Off,,Parameter.Inverter.VArModCfg.PFCtlWCfg.Dyn.WFilTmEna,RW
+System and device control,"cos Ï†(P), setting time, actual value filter",1.5,1.5,s,Parameter.Inverter.VArModCfg.PFCtlWCfg.Dyn.WFilTms,RW
+System and device control,"cos Ï†(P), lower deactivation voltage",0,0,p.u.,Parameter.Inverter.VArModCfg.PFCtlWCfg.Trg.DsaUnVolPu,RW
+System and device control,"cos Ï†(P), upper deactivation voltage",0,0,p.u.,Parameter.Inverter.VArModCfg.PFCtlWCfg.Trg.DsaVolPu,RW
+System and device control,"cos Ï†(P), lower activation voltage",0,0,p.u.,Parameter.Inverter.VArModCfg.PFCtlWCfg.Trg.EnaUnVolPu,RW
+System and device control,"cos Ï†(P), upper activation voltage",0,0,p.u.,Parameter.Inverter.VArModCfg.PFCtlWCfg.Trg.EnaVolPu,RW
+System and device control,PFMinQ1-Q4 Limit for all reactive power modes,303,Off,,Parameter.Inverter.VArModCfg.PFMinEna,RW
+System and device control,Q on Demand,303,Off,,Parameter.Inverter.VArModCfg.QoDEna,RW
+System and device control,Reactive power setting with voltage limitation,303,Off,,Parameter.Inverter.VArModCfg.VArCfg.Crv.CrvEna,RW
+System and device control,"Reactive power setting with voltage limitation, voltage value",0.94,0.94,p.u.,Parameter.Inverter.VArModCfg.VArCfg.Crv.XVal[0],RW
+System and device control,"Reactive power setting with voltage limitation, voltage value",0.96,0.96,p.u.,Parameter.Inverter.VArModCfg.VArCfg.Crv.XVal[1],RW
+System and device control,"Reactive power setting with voltage limitation, voltage value",1.04,1.04,p.u.,Parameter.Inverter.VArModCfg.VArCfg.Crv.XVal[2],RW
+System and device control,"Reactive power setting with voltage limitation, voltage value",1.06,1.06,p.u.,Parameter.Inverter.VArModCfg.VArCfg.Crv.XVal[3],RW
+System and device control,"Reactive power setting with voltage limitation, reactive power value",44,44,%,Parameter.Inverter.VArModCfg.VArCfg.Crv.YVal[0],RW
+System and device control,"Reactive power setting with voltage limitation, reactive power value",0,0,%,Parameter.Inverter.VArModCfg.VArCfg.Crv.YVal[1],RW
+System and device control,"Reactive power setting with voltage limitation, reactive power value",0,0,%,Parameter.Inverter.VArModCfg.VArCfg.Crv.YVal[2],RW
+System and device control,"Reactive power setting with voltage limitation, reactive power value",-44,-44,%,Parameter.Inverter.VArModCfg.VArCfg.Crv.YVal[3],RW
+System and device control,"Reactive power setting, limitation of change rate",303,Off,,Parameter.Inverter.VArModCfg.VArCfg.Dyn.VArGraEna,RW
+System and device control,"Reactive power setting, decrease rate",1200,1200,%/s,Parameter.Inverter.VArModCfg.VArCfg.Dyn.VArGraNeg,RW
+System and device control,"Reactive power setting, increase rate",1200,1200,%/s,Parameter.Inverter.VArModCfg.VArCfg.Dyn.VArGraPos,RW
+System and device control,"Reactive power setting, nominal value filter",308,On,,Parameter.Inverter.VArModCfg.VArCfg.Dyn.VArTmEna,RW
+System and device control,"Reactive power setting, setting time, nominal value filter",5,5,s,Parameter.Inverter.VArModCfg.VArCfg.Dyn.VArTms,RW
+System and device control,Manual reactive power setting for active power output,0,0,var,Parameter.Inverter.VArModCfg.VArCnstCfg.VAr,RW
+System and device control,Manual reactive power setting for active power output,0,0,%,Parameter.Inverter.VArModCfg.VArCnstCfg.VArNom,RW
+System and device control,Manual reactive power setpoint for zero power output,0,0,var,Parameter.Inverter.VArModCfg.VArCnstCfgDmd.VAr,RW
+System and device control,Manual reactive power setpoint for zero power output,0,0,%,Parameter.Inverter.VArModCfg.VArCnstCfgDmd.VArNom,RW
+System and device control,Manual reactive power setting in case of active power draw,0,0,var,Parameter.Inverter.VArModCfg.VArCnstCfgIn.VAr,RW
+System and device control,Manual reactive power setpoint for active power draw,0,0,%,Parameter.Inverter.VArModCfg.VArCnstCfgIn.VArNom,RW
+System and device control,"Q(V), number of support points to be used",4,4,,Parameter.Inverter.VArModCfg.VArCtlVolCfg.Crv.NumPt,RW
+System and device control,"Q(V), voltage value",0.92,0.92,p.u.,Parameter.Inverter.VArModCfg.VArCtlVolCfg.Crv.XVal[0],RW
+System and device control,"Q(V), voltage value",0.967,0.967,p.u.,Parameter.Inverter.VArModCfg.VArCtlVolCfg.Crv.XVal[1],RW
+System and device control,"Q(V), voltage value",1.033,1.033,p.u.,Parameter.Inverter.VArModCfg.VArCtlVolCfg.Crv.XVal[2],RW
+System and device control,"Q(V), voltage value",1.07,1.07,p.u.,Parameter.Inverter.VArModCfg.VArCtlVolCfg.Crv.XVal[3],RW
+System and device control,"Q(V), voltage value",1.08,1.08,p.u.,Parameter.Inverter.VArModCfg.VArCtlVolCfg.Crv.XVal[4],RW
+System and device control,"Q(V), voltage value",1.08,1.08,p.u.,Parameter.Inverter.VArModCfg.VArCtlVolCfg.Crv.XVal[5],RW
+System and device control,"Q(V), voltage value",1.08,1.08,p.u.,Parameter.Inverter.VArModCfg.VArCtlVolCfg.Crv.XVal[6],RW
+System and device control,"Q(V), voltage value",1.08,1.08,p.u.,Parameter.Inverter.VArModCfg.VArCtlVolCfg.Crv.XVal[7],RW
+System and device control,"Q(V), reactive power value",30,30,%,Parameter.Inverter.VArModCfg.VArCtlVolCfg.Crv.YVal[0],RW
+System and device control,"Q(V), reactive power value",0,0,%,Parameter.Inverter.VArModCfg.VArCtlVolCfg.Crv.YVal[1],RW
+System and device control,"Q(V), reactive power value",0,0,%,Parameter.Inverter.VArModCfg.VArCtlVolCfg.Crv.YVal[2],RW
+System and device control,"Q(V), reactive power value",-30,-30,%,Parameter.Inverter.VArModCfg.VArCtlVolCfg.Crv.YVal[3],RW
+System and device control,"Q(V), reactive power value",-30,-30,%,Parameter.Inverter.VArModCfg.VArCtlVolCfg.Crv.YVal[4],RW
+System and device control,"Q(V), reactive power value",-30,-30,%,Parameter.Inverter.VArModCfg.VArCtlVolCfg.Crv.YVal[5],RW
+System and device control,"Q(V), reactive power value",-30,-30,%,Parameter.Inverter.VArModCfg.VArCtlVolCfg.Crv.YVal[6],RW
+System and device control,"Q(V), reactive power value",-30,-30,%,Parameter.Inverter.VArModCfg.VArCtlVolCfg.Crv.YVal[7],RW
+System and device control,"Q(V), tripping delay",0,0,s,Parameter.Inverter.VArModCfg.VArCtlVolCfg.Dyn.ActTms,RW
+System and device control,"Q(V), limitation of change rate",303,Off,,Parameter.Inverter.VArModCfg.VArCtlVolCfg.Dyn.VArGraEna,RW
+System and device control,"Q(V), decrease rate",100,100,%/s,Parameter.Inverter.VArModCfg.VArCtlVolCfg.Dyn.VArGraNeg,RW
+System and device control,"Q(V), increase rate",100,100,%/s,Parameter.Inverter.VArModCfg.VArCtlVolCfg.Dyn.VArGraPos,RW
+System and device control,"Q(V), nominal value filter",308,On,,Parameter.Inverter.VArModCfg.VArCtlVolCfg.Dyn.VArTmEna,RW
+System and device control,"Q(V), response time for setpoint filter",6.51,6.51,s,Parameter.Inverter.VArModCfg.VArCtlVolCfg.Dyn.VArTmsPrc,RW
+System and device control,"Q(V), operating mode for reference voltage adaption",303,Off,,Parameter.Inverter.VArModCfg.VArCtlVolCfg.VolRef.AutnAdjMod,RW
+System and device control,"Q(V), setting time of automatic reference voltage adaption",1000,1000,s,Parameter.Inverter.VArModCfg.VArCtlVolCfg.VolRef.AutnAdjTms,RW
+System and device control,"Q(P), number of support points to be used",3,3,,Parameter.Inverter.VArModCfg.VArCtlWCfg.Crv.NumPt,RW
+System and device control,"Q(P), active power value",20,20,%,Parameter.Inverter.VArModCfg.VArCtlWCfg.Crv.XVal[0],RW
+System and device control,"Q(P), active power value",50,50,%,Parameter.Inverter.VArModCfg.VArCtlWCfg.Crv.XVal[1],RW
+System and device control,"Q(P), active power value",100,100,%,Parameter.Inverter.VArModCfg.VArCtlWCfg.Crv.XVal[2],RW
+System and device control,"Q(P), active power value",100,100,%,Parameter.Inverter.VArModCfg.VArCtlWCfg.Crv.XVal[3],RW
+System and device control,"Q(P), active power value",100,100,%,Parameter.Inverter.VArModCfg.VArCtlWCfg.Crv.XVal[4],RW
+System and device control,"Q(P), active power value",100,100,%,Parameter.Inverter.VArModCfg.VArCtlWCfg.Crv.XVal[5],RW
+System and device control,"Q(P), active power value",100,100,%,Parameter.Inverter.VArModCfg.VArCtlWCfg.Crv.XVal[6],RW
+System and device control,"Q(P), active power value",100,100,%,Parameter.Inverter.VArModCfg.VArCtlWCfg.Crv.XVal[7],RW
+System and device control,"Q(P), reactive power value",0,0,%,Parameter.Inverter.VArModCfg.VArCtlWCfg.Crv.YVal[0],RW
+System and device control,"Q(P), reactive power value",0,0,%,Parameter.Inverter.VArModCfg.VArCtlWCfg.Crv.YVal[1],RW
+System and device control,"Q(P), reactive power value",-44,-44,%,Parameter.Inverter.VArModCfg.VArCtlWCfg.Crv.YVal[2],RW
+System and device control,"Q(P), reactive power value",-44,-44,%,Parameter.Inverter.VArModCfg.VArCtlWCfg.Crv.YVal[3],RW
+System and device control,"Q(P), reactive power value",-44,-44,%,Parameter.Inverter.VArModCfg.VArCtlWCfg.Crv.YVal[4],RW
+System and device control,"Q(P), reactive power value",-44,-44,%,Parameter.Inverter.VArModCfg.VArCtlWCfg.Crv.YVal[5],RW
+System and device control,"Q(P), reactive power value",-44,-44,%,Parameter.Inverter.VArModCfg.VArCtlWCfg.Crv.YVal[6],RW
+System and device control,"Q(P), reactive power value",-44,-44,%,Parameter.Inverter.VArModCfg.VArCtlWCfg.Crv.YVal[7],RW
+System and device control,"Q(P), tripping delay",0,0,s,Parameter.Inverter.VArModCfg.VArCtlWCfg.Dyn.ActTms,RW
+System and device control,"Q(P), limitation of change rate",303,Off,,Parameter.Inverter.VArModCfg.VArCtlWCfg.Dyn.VArGraEna,RW
+System and device control,"Q(P), decrease rate",100,100,%/s,Parameter.Inverter.VArModCfg.VArCtlWCfg.Dyn.VArGraNeg,RW
+System and device control,"Q(P), increase rate",100,100,%/s,Parameter.Inverter.VArModCfg.VArCtlWCfg.Dyn.VArGraPos,RW
+System and device control,"Q(P), nominal value filter",308,On,,Parameter.Inverter.VArModCfg.VArCtlWCfg.Dyn.VArTmEna,RW
+System and device control,"Q(P), setting time, nominal value filter",5,5,s,Parameter.Inverter.VArModCfg.VArCtlWCfg.Dyn.VArTms,RW
+System and device control,"Q(P), lower deactivation voltage",0,0,p.u.,Parameter.Inverter.VArModCfg.VArCtlWCfg.Trg.DsaUnVolPu,RW
+System and device control,"Q(P), upper deactivation voltage",0,0,p.u.,Parameter.Inverter.VArModCfg.VArCtlWCfg.Trg.DsaVolPu,RW
+System and device control,"Q(P), lower activation voltage",0,0,p.u.,Parameter.Inverter.VArModCfg.VArCtlWCfg.Trg.EnaUnVolPu,RW
+System and device control,"Q(P), upper activation voltage",0,0,p.u.,Parameter.Inverter.VArModCfg.VArCtlWCfg.Trg.EnaVolPu,RW
+System and device control,Reactive power mode in case of active power draw,303,Off,,Parameter.Inverter.VArModCfg.VArModIn,RW
+System and device control,Reactive power fallback process in case of active power draw,4583,Maintain procedure,,Parameter.Inverter.VArModCfg.VArModInFlb,RW
+System and device control,Reactive power mode in case of active power output,1069,Q(V) characteristic curve,,Parameter.Inverter.VArModCfg.VArModOut,RW
+System and device control,Reactive power fallback process in case of active power output,4583,Maintain procedure,,Parameter.Inverter.VArModCfg.VArModOutFlb,RW
+System and device control,Reactive power for zero active power,303,Off,,Parameter.Inverter.VArModCfg.VArModZerW,RW
+System and device control,Reactive power fallback process in case of zero active power,4583,Maintain procedure,,Parameter.Inverter.VArModCfg.VArModZerWFlb,RW
+System and device control,"Reactive power mode, reference size for reactive power setting",5335,Maximum apparent power VAMax,,Parameter.Inverter.VArModCfg.VArNomRefMod,RW
+System and device control,"Reactive power behavior, type of reference voltage",4520,Mean value of phase voltages,,Parameter.Inverter.VArModCfg.VRefMod,RW
+Device,Inverter nominal voltage,400,400,V,Parameter.Inverter.VRtg,RW
+System and device control,P(f) characteristic curve,308,On,,Parameter.Inverter.WCtlHzModCfg.Ena,RW
+System and device control,Actual value filter for measured frequency value,303,Off,,Parameter.Inverter.WCtlHzModCfg.HzFilTmEna,RW
+System and device control,Setting time actual value filter,0.1,0.1,s,Parameter.Inverter.WCtlHzModCfg.HzFilTms,RW
+System and device control,P(f) reference value for active power in case of overfrequency,4354,Maximum active power export,,Parameter.Inverter.WCtlHzModCfg.RefModOv,RW
+System and device control,"P(f), reference value for active power for underfrequency",4354,Maximum active power export,,Parameter.Inverter.WCtlHzModCfg.RefModUn,RW
+System and device control,"P(f), hysteresis in case of overfrequency",303,Off,,Parameter.Inverter.WCtlHzModCfg.WCtlHzCfg.HystEnaOv,RW
+System and device control,"P(f), hysteresis in case of underfrequency",303,Off,,Parameter.Inverter.WCtlHzModCfg.WCtlHzCfg.HystEnaUn,RW
+System and device control,"P(f), buckling overfrequency",60.036,60.036,Hz,Parameter.Inverter.WCtlHzModCfg.WCtlHzCfg.HzOv[0],RW
+System and device control,"P(f), buckling overfrequency",66,66,Hz,Parameter.Inverter.WCtlHzModCfg.WCtlHzCfg.HzOv[1],RW
+System and device control,"P(f), buckling overfrequency",66,66,Hz,Parameter.Inverter.WCtlHzModCfg.WCtlHzCfg.HzOv[2],RW
+System and device control,"P(f), active power change per Hz in case of overfrequency",-33.333,-33.333,%,Parameter.Inverter.WCtlHzModCfg.WCtlHzCfg.HzOvGra[0],RW
+System and device control,"P(f), active power change per Hz in case of overfrequency",-40,-40,%,Parameter.Inverter.WCtlHzModCfg.WCtlHzCfg.HzOvGra[1],RW
+System and device control,"P(f), active power change per Hz in case of overfrequency",-40,-40,%,Parameter.Inverter.WCtlHzModCfg.WCtlHzCfg.HzOvGra[2],RW
+System and device control,"P(f), reset underfrequency",60.036,60.036,Hz,Parameter.Inverter.WCtlHzModCfg.WCtlHzCfg.HzOvStop,RW
+System and device control,"P(f), active power change rate after fault end",10000,10000,%/min,Parameter.Inverter.WCtlHzModCfg.WCtlHzCfg.HzStopWGra,RW
+System and device control,"P(f), lag time",1,1,s,Parameter.Inverter.WCtlHzModCfg.WCtlHzCfg.HzStopWGraTms,RW
+System and device control,"P(f), buckling underfrequency",59.964,59.964,Hz,Parameter.Inverter.WCtlHzModCfg.WCtlHzCfg.HzUn[0],RW
+System and device control,"P(f), buckling underfrequency",44,44,Hz,Parameter.Inverter.WCtlHzModCfg.WCtlHzCfg.HzUn[1],RW
+System and device control,"P(f), buckling underfrequency",44,44,Hz,Parameter.Inverter.WCtlHzModCfg.WCtlHzCfg.HzUn[2],RW
+System and device control,"P(f), active power change per Hz in case of underfrequency",-33.333,-33.333,%,Parameter.Inverter.WCtlHzModCfg.WCtlHzCfg.HzUnGra[0],RW
+System and device control,"P(f), active power change per Hz in case of underfrequency",-40,-40,%,Parameter.Inverter.WCtlHzModCfg.WCtlHzCfg.HzUnGra[1],RW
+System and device control,"P(f), active power change per Hz in case of underfrequency",-40,-40,%,Parameter.Inverter.WCtlHzModCfg.WCtlHzCfg.HzUnGra[2],RW
+System and device control,"P(f), reset underfrequency",59.964,59.964,Hz,Parameter.Inverter.WCtlHzModCfg.WCtlHzCfg.HzUnStop,RW
+System and device control,"P(f), delay for change between over- and underfrequency",300,300,ms,Parameter.Inverter.WCtlHzModCfg.WCtlHzCfg.WCtlChgOvUnTmms,RW
+System and device control,"P(f), tripping delay",0,0,ms,Parameter.Inverter.WCtlHzModCfg.WCtlHzCfg.WCtlTmms,RW
+System and device control,"P(f), limitation of ramp rate",303,Off,,Parameter.Inverter.WCtlHzModCfg.WGraEna,RW
+System and device control,"P(f), ramp-down rate",20,20,%/s,Parameter.Inverter.WCtlHzModCfg.WGraNeg,RW
+System and device control,"P(f), ramp-up rate",20,20,%/s,Parameter.Inverter.WCtlHzModCfg.WGraPos,RW
+System and device control,"P(f), setpoint filter",308,On,,Parameter.Inverter.WCtlHzModCfg.WTmEna,RW
+System and device control,"P(f), setting time",6.51,6.51,s,Parameter.Inverter.WCtlHzModCfg.WTms,RW
+System and device control,Soft start-up rate P,120,120,%/min,Parameter.Inverter.WGraConn,RW
+System and device control,Soft start-up P,308,On,,Parameter.Inverter.WGraConnEna,RW
+System and device control,Increase rate in case of insolation change,6000,6000,%/min,Parameter.Inverter.WGraMpp,RW
+System and device control,Increase rate in case of insolation change,303,Off,,Parameter.Inverter.WGraMppEna,RW
+System and device control,Reconnect gradient after grid fault,120,120,%/min,Parameter.Inverter.WGraRecon,RW
+System and device control,Soft start-up P after grid fault,308,On,,Parameter.Inverter.WGraReconEna,RW
+Device,Rated active power WMaxOutRtg,7680,7680,W,Parameter.Inverter.WLim,RO
+Device,Set active power limit,7680,7680,W,Parameter.Inverter.WMax,RW
+AC Side,Nominal active power WMaxIn,-7680,-7680,W,Parameter.Inverter.WMaxIn,RW
+Type Label,Rated active power WMaxInRtg,-7680,-7680,W,Parameter.Inverter.WMaxInRtg,RO
+System and device control,Grid disconnection for 0% active power setting,1130,No,,Parameter.Inverter.WModCfg.GriSwOpnZerW,RW
+System and device control,"Active power limitation P, active power configuration",7680,7680,W,Parameter.Inverter.WModCfg.WCnstCfg.W,RW
+System and device control,"Active power limitation P, active power configuration",100,100,%,Parameter.Inverter.WModCfg.WCnstCfg.WNom,RW
+System and device control,Unbalanced power limitation,303,Off,,Parameter.Inverter.WModCfg.WCtlAsym.Ena,RW
+System and device control,"Unbalanced power limitation, maximum unbalanced apparent power",15000,15000,VA,Parameter.Inverter.WModCfg.WCtlAsym.VAMaxAsym,RW
+System and device control,"External active power setting, limitation of change rate",303,Off,,Parameter.Inverter.WModCfg.WCtlComCfg.Dyn.WGraEna,RW
+System and device control,"External active power setting, decrease rate",20,20,%/s,Parameter.Inverter.WModCfg.WCtlComCfg.Dyn.WGraNeg,RW
+System and device control,"External active power setting, increase rate",20,20,%/s,Parameter.Inverter.WModCfg.WCtlComCfg.Dyn.WGraPos,RW
+System and device control,"External active power setting, nominal value filter",303,Off,,Parameter.Inverter.WModCfg.WCtlComCfg.Dyn.WTmEna,RW
+System and device control,"External active power setting, setting time, nominal value filter",3,3,s,Parameter.Inverter.WModCfg.WCtlComCfg.Dyn.WTms,RW
+System and device control,"External active power setting 2, limitation of change rate",303,Off,,Parameter.Inverter.WModCfg.WCtlComCfg2.Dyn.WGraEna,RW
+System and device control,"External active power setting 2, decrease rate",20,20,%/s,Parameter.Inverter.WModCfg.WCtlComCfg2.Dyn.WGraNeg,RW
+System and device control,"External active power setting 2, increase rate",20,20,%/s,Parameter.Inverter.WModCfg.WCtlComCfg2.Dyn.WGraPos,RW
+System and device control,"External active power setting 2, nominal value filter",303,Off,,Parameter.Inverter.WModCfg.WCtlComCfg2.Dyn.WTmEna,RW
+System and device control,"External active power setting 2, setting time, nominal value filter",3,3,s,Parameter.Inverter.WModCfg.WCtlComCfg2.Dyn.WTms,RW
+System and device control,"External active power setpoint 2, low priority",308,On,,Parameter.Inverter.WModCfg.WCtlComCfg2.LoPrioEna,RW
+System and device control,"P(V), tripping delay",0,0,s,Parameter.Inverter.WModCfg.WCtlVolCfg.ActTms,RW
+System and device control,"P(V), number of points used",2,2,,Parameter.Inverter.WModCfg.WCtlVolCfg.Crv.NumPt,RW
+System and device control,"P(V), voltage value",1.06,1.06,p.u.,Parameter.Inverter.WModCfg.WCtlVolCfg.Crv.XVal[0],RW
+System and device control,"P(V), voltage value",1.1,1.1,p.u.,Parameter.Inverter.WModCfg.WCtlVolCfg.Crv.XVal[1],RW
+System and device control,"P(V), voltage value",2,2,p.u.,Parameter.Inverter.WModCfg.WCtlVolCfg.Crv.XVal[2],RW
+System and device control,"P(V), voltage value",2,2,p.u.,Parameter.Inverter.WModCfg.WCtlVolCfg.Crv.XVal[3],RW
+System and device control,"P(V), voltage value",2,2,p.u.,Parameter.Inverter.WModCfg.WCtlVolCfg.Crv.XVal[4],RW
+System and device control,"P(V), voltage value",2,2,p.u.,Parameter.Inverter.WModCfg.WCtlVolCfg.Crv.XVal[5],RW
+System and device control,"P(V), voltage value",2,2,p.u.,Parameter.Inverter.WModCfg.WCtlVolCfg.Crv.XVal[6],RW
+System and device control,"P(V), voltage value",2,2,p.u.,Parameter.Inverter.WModCfg.WCtlVolCfg.Crv.XVal[7],RW
+System and device control,"P(V), active power value",100,100,%,Parameter.Inverter.WModCfg.WCtlVolCfg.Crv.YVal[0],RW
+System and device control,"P(V), active power value",0,0,%,Parameter.Inverter.WModCfg.WCtlVolCfg.Crv.YVal[1],RW
+System and device control,"P(V), active power value",0,0,%,Parameter.Inverter.WModCfg.WCtlVolCfg.Crv.YVal[2],RW
+System and device control,"P(V), active power value",0,0,%,Parameter.Inverter.WModCfg.WCtlVolCfg.Crv.YVal[3],RW
+System and device control,"P(V), active power value",0,0,%,Parameter.Inverter.WModCfg.WCtlVolCfg.Crv.YVal[4],RW
+System and device control,"P(V), active power value",0,0,%,Parameter.Inverter.WModCfg.WCtlVolCfg.Crv.YVal[5],RW
+System and device control,"P(V), active power value",0,0,%,Parameter.Inverter.WModCfg.WCtlVolCfg.Crv.YVal[6],RW
+System and device control,"P(V), active power value",0,0,%,Parameter.Inverter.WModCfg.WCtlVolCfg.Crv.YVal[7],RW
+System and device control,"P(V), activation",308,On,,Parameter.Inverter.WModCfg.WCtlVolCfg.Ena,RW
+System and device control,"P(V), low priority",303,Off,,Parameter.Inverter.WModCfg.WCtlVolCfg.LoPrioEna,RW
+System and device control,"P(V), type of reference voltage",4520,Mean value of phase voltages,,Parameter.Inverter.WModCfg.WCtlVolCfg.VRefMod,RW
+System and device control,"P(V), limitation of change rate",303,Off,,Parameter.Inverter.WModCfg.WCtlVolCfg.WGraEna,RW
+System and device control,"P(V), decrease rate",20,20,%/s,Parameter.Inverter.WModCfg.WCtlVolCfg.WGraNeg,RW
+System and device control,"P(V), increase rate",20,20,%/s,Parameter.Inverter.WModCfg.WCtlVolCfg.WGraPos,RW
+System and device control,"P(V), type of reference active power",4405,Maximum active power WMax,,Parameter.Inverter.WModCfg.WCtlVolCfg.WRefMod,RW
+System and device control,"P(V), nominal value filter",308,On,,Parameter.Inverter.WModCfg.WCtlVolCfg.WTmEna,RW
+System and device control,"P(V), setting time, nominal value filter",6,6,s,Parameter.Inverter.WModCfg.WCtlVolCfg.WTms,RW
+System and device control,Operating mode active power setting,1079,External active power setpoint,,Parameter.Inverter.WModCfg.WMod,RW
+External Communication,Modbus P-settings at input 2,303,Off,,Parameter.Mb.ScdInEna,RW
+External Communication,Modbus TCP server on,1129,Yes,,Parameter.Mb.TcpSrv.IsOn,RW
+External Communication,Modbus TCP server port,502,502,,Parameter.Mb.TcpSrv.Port,RW
+System communication,Energy meter used,9437,SMA Revenue Grade Meter,,Parameter.Metering.EnMtrTyp,RW
+Type Label,Nominal current of all phases,32,32,A,Parameter.Nameplate.ARtg,RO
+Device Components,Hardware version of the communication assembly,10,10,,Parameter.Nameplate.CmpCom.HwVer,RO
+Device Components,Revision status of the communication assembly,0,0,,Parameter.Nameplate.CmpCom.Rev,RO
+Device Components,Serial number of the communication assembly,3019553776,3019553776,,Parameter.Nameplate.CmpCom.SerNum,RO
+Device Components,SUSyID of the communication assembly,461,461,,Parameter.Nameplate.CmpCom.SusyId,RO
+Device Components,Firmware version of the communication assembly,02.03.31.R,02.03.31.R,,Parameter.Nameplate.CmpCom.SwRev,RO
+Device Components,Hardware version of the main processor,13,13,,Parameter.Nameplate.CmpMain.HwVer,RO
+Device Components,Serial number of the main processor,3020127924,3020127924,,Parameter.Nameplate.CmpMain.SerNum,RO
+Device Components,SUSyID of the main processor,460,460,,Parameter.Nameplate.CmpMain.SusyId,RO
+Device Components,Firmware version of the main processor,02.42.06.R,02.42.06.R,,Parameter.Nameplate.CmpMain.SwRev,RO
+Device Components,Firmware version of the operating system,04.03.00.R,04.03.00.R,,Parameter.Nameplate.CmpOS.SwRev,RO
+Device Components,Serial number of the RGM module,3022525343,3022525343,,Parameter.Nameplate.CmpRgm.SerNum,RO
+Type Label,Device name,SN 3020329735,SN 3020329735,,Parameter.Nameplate.Location,RW
+Type Label,Device class,8009,Hybrid inverter,,Parameter.Nameplate.MainModel,RO
+Type Label,Device type,19084,Sunny Boy Smart Energy 7.7-US,,Parameter.Nameplate.Model,RO
+Type Label,Type designation,Sunny Boy Smart Energy 7.7-US,Sunny Boy Smart Energy 7.7-US,,Parameter.Nameplate.ModelStr,RO
+Type Label,Firmware version,03.12.15.R,03.12.15.R,,Parameter.Nameplate.PkgRev,RO
+Type Label,Serial number,3020329735,3020329735,,Parameter.Nameplate.SerNum,RO
+Type Label,Manufacturer,461,SMA,,Parameter.Nameplate.Vendor,RO
+Type Label,Manufacturer,SMA,SMA,,Parameter.Nameplate.VendorStr,RO
+Type Label,WiFi-MAC address,54:64:DE:7E:98:10,54:64:DE:7E:98:10,,Parameter.Nameplate.WlMacId,RO
+Device,Interruption of load supply during the transition from automatic backup to feed-in operation,5,5,s,Parameter.Operation.BckCbSwDl,RW
+AC Side,Operating mode of backup mode of PV inverter,303,Off,,Parameter.Operation.BckOpModPv,RW
+Device,Minimum duration of grid recovery for deactivation of backup operation,300,300,s,Parameter.Operation.BckSwOffDl,RW
+Device,Minimum duration of grid fault for start of automatic backup operation,5,5,s,Parameter.Operation.BckSwOnDl,RW
+AC Side,Configuration of the backup type,302,-------,,Parameter.Operation.BckTyp,RW
+Battery,CAN-ID of the battery,0,0,,Parameter.Operation.CmpBMS.CanDevId,RW
+Battery,IP addresses of battery,,,,Parameter.Operation.CmpBMS.Ip,RW
+Battery,BMS type,302,-------,,Parameter.Operation.CmpBMS.Typ,RW
+Device,Black start module,8646,BSM V1.0,,Parameter.Operation.CmpBSM.Typ,RO
+Device,DC voltage control type,295,MPP,,Parameter.Operation.CtrlType,RW
+DC Side,Starting the I-V curve measurement,973,------,,Parameter.Operation.IVCrv.MsStr,RW
+Device,Time of cyclic insulation measurement,10800,10800,,Parameter.Operation.LeakRisMsTm,RW
+Device,Load parameter,undefined,undefined,,Parameter.Operation.LodFnc,RW
+AC Side,Manual restart activated,1129,Yes,,Parameter.Operation.ManRstr.IsOn,RW
+AC Side,Manual restart after arc detection,5407,"Yes, after 5 electric arc detections within 24 hrs",,Parameter.Operation.ManRstr.ManRstrAFCI,RW
+AC Side,Manual restart after active islanding detection,303,Off,,Parameter.Operation.ManRstr.ManRstrAID,RW
+AC Side,Activation of Manual Restart for reoccurring short-circuit faults in backup operation mode.,308,On,,Parameter.Operation.ManRstr.ManRstrBckSc,RW
+AC Side,Manual restart after frequency error,303,Off,,Parameter.Operation.ManRstr.ManRstrHz,RW
+AC Side,Manual restart after overvoltage,303,Off,,Parameter.Operation.ManRstr.ManRstrOvVol,RW
+AC Side,Manual restart after passive islanding detection,303,Off,,Parameter.Operation.ManRstr.ManRstrPID,RW
+AC Side,Manual restart after fault current,308,On,,Parameter.Operation.ManRstr.ManRstrRCD,RW
+AC Side,Manual restart after undervoltage,303,Off,,Parameter.Operation.ManRstr.ManRstrUnVol,RW
+Device,General operating mode,1467,Start,,Parameter.Operation.OpMod,RW
+DC Side,Rapid Shutdown Initiator,5146,AC disconnect PV system,,Parameter.Operation.RSSInitiator,RW
+DC Side,Rapid Shutdown Mode,4128,SunSpec shutdown,,Parameter.Operation.RSSOpMode,RW
+Further Applications,Start delay,0,0,s,Parameter.Operation.StrTms,RW
+Device,Reset operating data,973,------,,Parameter.Operation.ValRsIstl,RW
+Grid connection,Rated apparent power of all inverters,7680,7680,VA,Parameter.Plnt.VARtg,RW
+System communication,Current speedwire DNS server address,192.168.10.1,192.168.10.1,,Parameter.Spdwr.ActlDnsSrvIp,RO
+System communication,Current speedwire gateway address,192.168.10.1,192.168.10.1,,Parameter.Spdwr.ActlGwIp,RO
+System communication,Current speedwire IP address,192.168.10.70,192.168.10.70,,Parameter.Spdwr.ActlIp,RO
+System communication,Current speedwire subnet mask,255.255.255.0,255.255.255.0,,Parameter.Spdwr.ActlSnetMsk,RO
+System communication,Automatic speedwire configuration switched on,1129,Yes,,Parameter.Spdwr.AutoCfgIsOn,RW
+System communication,IGMP query interval,125,125,s,Parameter.Spdwr.IgmpQryTms,RW
+System communication,Send IGMP requests,4479,Version 3,,Parameter.Spdwr.IgmpQryTx,RW
+Device,Version of communication Bootloader,00.00.00.R,00.00.00.R,,Parameter.SwCmp.CmpComBlt.SwRev,RO
+Device,ennexOS framework version,01.42.00.R,01.42.00.R,,Parameter.SwCmp.CmpEnnexOS.Frwk.SwRev,RO
+Device,Initiate device restart,undefined,undefined,,Parameter.Sys.DevRstr,RW
+Device,Find device,303,Off,,Parameter.Sys.DevSig,RW
+Device,Brightness of the LEDs,5190,Average,,Parameter.Sys.DevSigBri,RW
+Device,Run self test,973,------,,Parameter.Sys.SelfTst,RW
+Device,Prescribed self-test,3585,No self-test set,,Parameter.Sys.SelfTstDmd,RO
+Device,Automatic updates activated,1129,Yes,,Parameter.Upd.AutoUpdIsOn,RW
+Device,Check for update and install it,undefined,undefined,,Parameter.Upd.AvalChkIstl,RW
+External Communication,Webconnect functionality switched on,1130,No,,Parameter.WebConn.IsOn,RW
+External Communication,Webconnect version,01.05.00.R,01.05.00.R,,Parameter.WebConn.SwRev,RO
+System communication,Currently used IP DNS server address for WiFi,172.22.0.3,172.22.0.3,,Parameter.Wl.ActlDnsSrvIp,RO
+System communication,Currently used IP gateway address for WiFi,172.22.0.3,172.22.0.3,,Parameter.Wl.ActlGwIp,RO
+System communication,Currently used IP address for WiFi,172.22.0.1,172.22.0.1,,Parameter.Wl.ActlIp,RO
+System communication,Currently used IP subnet mask for WiFi,255.255.0.0,255.255.0.0,,Parameter.Wl.ActlSnetMsk,RO
+System communication,Automatic configuration of WiFi is turned on,1129,Yes,,Parameter.Wl.AutoCfgIsOn,RW
+System communication,Perform WiFi scan,302,-------,,Parameter.Wl.DoAcq,RW
+System communication,Activate WPS,302,-------,,Parameter.Wl.DoWPS,RW
+System communication,WiFis found,SMA3020329723,SMA3020329723,,Parameter.Wl.ExsNetw[0],RO
+System communication,WiFis found,SMA3005026510,SMA3005026510,,Parameter.Wl.ExsNetw[1],RO
+System communication,WiFis found,IT-Enclave,IT-Enclave,,Parameter.Wl.ExsNetw[2],RO
+System communication,WiFis found,SMA3022640718,SMA3022640718,,Parameter.Wl.ExsNetw[3],RO
+System communication,WiFis found,MPS Lab 2,MPS Lab 2,,Parameter.Wl.ExsNetw[4],RO
+System communication,WiFis found,SMA3009154625,SMA3009154625,,Parameter.Wl.ExsNetw[5],RO
+System communication,WiFis found,Verizon-MiFi8800L-59C6,Verizon-MiFi8800L-59C6,,Parameter.Wl.ExsNetw[6],RO
+System communication,WiFis found,FDB,FDB,,Parameter.Wl.ExsNetw[7],RO
+System communication,WiFis found,HP-Print-35-Officejet Pro 8610,HP-Print-35-Officejet Pro 8610,,Parameter.Wl.ExsNetw[8],RO
+System communication,WiFis found,CR202L-10EBD6,CR202L-10EBD6,,Parameter.Wl.ExsNetw[9],RO
+System communication,WiFis found,DIRECT-A3-HP OfficeJet Pro 9010,DIRECT-A3-HP OfficeJet Pro 9010,,Parameter.Wl.ExsNetw[10],RO
+System communication,WiFis found,SMA-Guest,SMA-Guest,,Parameter.Wl.ExsNetw[11],RO
+System communication,WiFis found,ATTFh52J2C,ATTFh52J2C,,Parameter.Wl.ExsNetw[12],RO
+System communication,WiFi is turned on,1129,Yes,,Parameter.Wl.IsOn,RW
+System communication,Encryption for WiFi,3398,WPA2-MIXED,,Parameter.Wl.Sec.Cry,RW
+System communication,WiFi password,****,****,,Parameter.Wl.Sec.Psk,RW
+System communication,SSID of WiFi,,,,Parameter.Wl.Sec.Ssid,RW
+System communication,Soft-access-point is turned on,1129,Yes,,Parameter.Wl.SoftAcsIsOn,RW
