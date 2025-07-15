@@ -1,0 +1,96 @@
+﻿EPRI parameter name,SBSE,STP CORE1,Formula or equation (if applicable)
+NP_P_MAX-AS,Inverter.Wlim,"Rated active power WMaxOutRtg	",NP_P_MAX-AS
+NP_P_MAX_OVER_PF-AS,,,NP_OVER_PF-AS*NP_P_MAX-AS
+NP_OVER_PF-AS,Inverter.PFMinQ1,Nominal cos φ PFMinQ1,NP_VA_MAX-AS
+NP_P_MAX_UNDER_PF-AS,,,NP_Under_PF-AS*NP_P_MAX-AS
+NP_UNDER_PF-AS,Inverter.PFMinQ4,Nominal cos φ PFMinQ4,NP_P_MAX-AS
+NP_VA_MAX-AS,Inverter.VAMaxOut,Nominal apparent power VAMaxOut,NP_VA_MAX-AS
+NP_NORMAL_OP_CAT,,,CAT_A-CAT_B
+NP_NORMAL_OP-AS,,,"IF(OR(ISNUMBER(SEARCH(""A"",UPPER(NP_NORMAL_OP_CAT))),ISNUMBER(SEARCH(""B"",UPPER(NP_NORMAL_OP_CAT)))),CAT_B,"""")"
+NP_ABNORMAL_OP_CAT,,,CAT_I-CAT_II-CAT_III
+NP_ABNORMAL_OP-AS,,,"IF(OR(ISNUMBER(SEARCH(""I"",UPPER(NP_ABNORMAL_OP_CAT))),ISNUMBER(SEARCH(""II"",UPPER(NP_ABNORMAL_OP_CAT))),ISNUMBER(SEARCH(""III"",UPPER(NP_ABNORMAL_OP_CAT)))),CAT_III,"""")"
+NP_Q_MAX_INJ-AS,,,NP_Q_MAX_INJ-AS
+NP_Q_MAX_ABS-AS,,,(-1)*NP_Q_MAX_ABS-AS
+NP_P_MAX_CHARGE-AS,Inverter.WMaxIn,Nominal active power WMaxIn,NP_P_MAX_CHARGE-AS
+NP_APPARENT_POWER_CHARGE_MAX-AS,Inverter.VAMaxIn ,Nominal apparent power VAMaxIn,NP_APPARENT_POWER_CHARGE_MAX-AS
+NP_AC_V_NOM-AS,Inverter.PlntCtl.VRef,Grid nominal voltage,NP_AC_V_NOM-AS
+NP_AC_V_MAX-AS,,,NP_AC_V_NOM-AS*1.1
+NP_AC_V_MIN-AS,,,NP_AC_V_NOM-AS*0.88
+NP_SUPPORTED_MODES,,,CONST_PF-CONST_Q-QV-QP-PV-PF
+NP_REACTIVE_SUSCEPTANCE,,,0
+NP_MANUFACTURER,,,SMA
+NP_MODEL,Parameter.Nameplate.ModelStr,Type designation,NP_MODEL
+NP_SERIAL_NUM,Parameter.Nameplate.SerNum,Serial number,NP_SERIAL_NUM
+NP_FW_VER,Parameter.Nameplate.PkgRev,Firmware version,NP_FW_VER
+AP_LIMIT_ENABLE-AS,Inverter.WModCfg.WCnstCfg.WNom,"Active power limitation P, active power configuration","IF(OR(Inverter.WModCfg.WCnstCfg.W>0,Inverter.WModCfg.WCnstCfg.Wnom>0),""ENABLED"",""DISABLED"")"
+AP_LIMIT-AS,Inverter.WModCfg.WCnstCfg.WNom,"Active power limitation P, active power configuration","IF(AP_LIMIT_ENABLE-AS>0,AP_LIMIT-AS*100,"""")"
+ES_PERMIT_SERVICE-AS,Operation.OpMod,"General operating mode	","IF(Operation.OpMod=""Start"",""ENABLED"",""DISABLED"")"
+ES_V_LOW-AS,GridGuard.Cntry.VolCtl.ConnMinPu,"Minimum connection voltage after restart	",ES_V_LOW-AS
+ES_V_HIGH-AS,GridGuard.Cntry.VolCtl.ConnMaxPu,"Maximum connection voltage after restart	",ES_V_HIGH-AS
+ES_F_LOW-AS,GridGuard.Cntry.FrqCtl.ConnMin,"Minimum connection frequency after restart	",ES_F_LOW-AS
+ES_F_HIGH-AS,GridGuard.Cntry.FrqCtl.ConnMax,"Maximum connection frequency after restart	",ES_F_HIGH-AS
+ES_DELAY-AS,GridGuard.Cntry.GriStrTms,"Reconnection time upon restart	",ES_DELAY-AS
+ES_RANDOMIZED_DELAY-AS,Inverter.WCtlHzModCfg.WCtlHzCfg.WCtlTmms,"P(f), tripping delay",ES_RANDOMIZED_DELAY-AS
+ES_RAMP_RATE-AS,Inverter.WGraConn    ,"Soft start-up rate P	",6000/ES_RAMP_RATE-AS
+CONST_PF_MODE_ENABLE-AS,,,"IF(Inverter.VArModCfg.VArModOut=""Q, manual setting in %"",""ENABLED"",""DISABLED"")"
+CONST_PF_EXCITATION-AS,Inverter.VArModCfg.PFCnstCfg.PFExtOut,"Manual cos φ setting, excitation type in case of active power generation	",CONST_PF_EXCITATION-AS
+CONST_PF-AS,Inverter.VArModCfg.PFCnstCfg.PFOut,"Manual cos φ setting, cos φ nominal value in case of active power generation	","IF(Inverter.VArModCfg.VArModOut=""Q, manual setting in %"",Inverter.VArModCfg.PFCnstCfg.PFOut,"""")"
+CONST_Q_MODE_ENABLE-AS,,,"IF(Inverter.VArModCfg.VArModOut=""Q, manual setting in var"",""ENABLED"",""DISABLED"")"
+CONST_Q-AS,Inverter.VArModCfg.VArCnstCfg.VArNom,Manual reactive power setting for active power output,"scaleVArSettingOnImport(1,CONST_Q-AS)"
+QV_MODE_ENABLE-AS,,,"IF(Inverter.VArModCfg.VArModOut=""Q(V) characteristic curve"",""ENABLED"",""DISABLED"")"
+QV_VREF-AS,Inverter.CtlComCfg.VArCtlVolCom.FlbVolRefPu,"Q(V), fallback of reference voltage	",QV_VREF-AS
+QV_VREF_AUTO_MODE-AS,Inverter.VArModCfg.VArCtlVolCfg.VolRef.AutnAdjMod,"Q(V), operating mode for reference voltage adaption	","IF(QV_VREF_AUTO_MODE=""On"",""ENABLED"",""DISABLED"")"
+QV_VREF_TIME-AS,Inverter.VArModCfg.VArCtlVolCfg.VolRef.AutnAdjTms ,"Q(V), setting time of automatic reference voltage adaption	",QV_VREF_TIME-AS*3
+QV_CURVE_V2-AS,Inverter.VArModCfg.VArCtlVolCfg.Crv.Xval[1],"Q(V), voltage value [B]	",QV_CURVE_V2-AS
+QV_CURVE_Q2-AS,Inverter.VArModCfg.VArCtlVolCfg.Crv.Yval[1],"Q(V), reactive power value [B]	",QV_CURVE_Q2-AS*100
+QV_CURVE_V3-AS,Inverter.VArModCfg.VArCtlVolCfg.Crv.Xval[2],"Q(V), voltage value [C]	",QV_CURVE_V3-AS
+QV_CURVE_Q3-AS,Inverter.VArModCfg.VArCtlVolCfg.Crv.Yval[2],"Q(V), reactive power value [C]	",QV_CURVE_Q3-AS*100
+QV_CURVE_V1-AS,Inverter.VArModCfg.VArCtlVolCfg.Crv.Xval[0],"Q(V), voltage value [A]	",QV_CURVE_V1-AS
+QV_CURVE_Q1-AS,Inverter.VArModCfg.VArCtlVolCfg.Crv.Yval[0],"Q(V), reactive power value [A]	",QV_CURVE_Q1-AS*100
+QV_CURVE_V4-AS,Inverter.VArModCfg.VArCtlVolCfg.Crv.Xval[3],"Q(V), voltage value [D]	",QV_CURVE_V4-AS
+QV_CURVE_Q4-AS,Inverter.VArModCfg.VArCtlVolCfg.Crv.Yval[3],"Q(V), reactive power value [D]	",QV_CURVE_Q4-AS*100
+QV_OLRT-AS,Inverter.VArModCfg.VArCtlVolCfg.Dyn.VArTmsPrc,"Q(V), response time for setpoint filter	",QV_OLRT-AS*1.30435
+QP_MODE_ENABLE-AS,Inverter.VArModCfg.VArModOut,"Reactive power mode in case of active power output	","IF(Inverter.VArModCfg.VArModOut=""Q(P) characteristic curve"",""ENABLED"",""DISABLED"")"
+QP_CURVE_P3_GEN-AS,Inverter.VArModCfg.VArCtlWCfg.Crv.Xval[2],"Q(P), active power value [B]	",QP_CURVE_P3_GEN-AS*100
+QP_CURVE_P2_GEN-AS,Inverter.VArModCfg.VArCtlWCfg.Crv.Xval[1],"Q(P), active power value [B]	",QP_CURVE_P2_GEN-AS*100
+QP_CURVE_P1_GEN-AS,Inverter.VArModCfg.VArCtlWCfg.Crv.Xval[0],"Q(P), active power value [A]	",QP_CURVE_P1_GEN-AS*100
+QP_CURVE_P1_LOAD-AS,Inverter.VArModCfg.VArCtlWCfg.Crv.XVal[2],N/A,QP_CURVE_P1_LOAD-AS * 100
+QP_CURVE_P2_LOAD-AS,Inverter.VArModCfg.VArCtlWCfg.Crv.XVal[1],N/A,QP_CURVE_P2_LOAD-AS * 100
+QP_CURVE_P3_LOAD-AS,Inverter.VArModCfg.VArCtlWCfg.Crv.XVal[0],N/A,QP_CURVE_P3_LOAD-AS * 100
+QP_CURVE_Q3_GEN-AS,Inverter.VArModCfg.VArCtlWCfg.Crv.Yval[2],"Q(P), reactive power value [C]	",QP_CURVE_Q3_GEN-AS * 100
+QP_CURVE_Q2_GEN-AS,Inverter.VArModCfg.VArCtlWCfg.Crv.Yval[1],"Q(P), reactive power value [B]	",QP_CURVE_Q2_GEN-AS * 100
+QP_CURVE_Q1_GEN-AS,Inverter.VArModCfg.VArCtlWCfg.Crv.Yval[0],"Q(P), reactive power value [A]	",QP_CURVE_Q1_GEN-AS * 100
+QP_OLRT-SS-AS,Inverter.VArModCfg.VArCtlWCfg.Dyn.VArTms,"Q(P), setting time, nominal value filter	",QP_OLRT-AS * 1.30435
+QP_CURVE_Q1_LOAD-AS,Inverter.VArModCfg.VArCtlWCfg.Crv.YVal[2],N/A,"scaleVArSettingOnImport(QP_CURVE_P1_LOAD-AS, QP_CURVE_Q1_LOAD-AS)"
+QP_CURVE_Q2_LOAD-AS,Inverter.VArModCfg.VArCtlWCfg.Crv.YVal[1],N/A,"scaleVArSettingOnImport(QP_CURVE_P2_LOAD-AS, QP_CURVE_Q2_LOAD-AS)"
+QP_CURVE_Q3_LOAD-AS,Inverter.VArModCfg.VArCtlWCfg.Crv.YVal[0],N/A,"scaleVArSettingOnImport(QP_CURVE_P3_LOAD-AS, QP_CURVE_Q3_LOAD-AS)"
+PV_MODE_ENABLE-AS,,,"If(Inverter.VArModCfg.VArModOut='Q(P) characteristic curve','ENABLED','DISABLED')"
+PV_CURVE_V1-AS,Inverter.WModCfg.WCtlVolCfg.Crv.Xval[0],"P(V), voltage value [A]	",PV_CURVE_V1-AS
+PV_CURVE_P1-AS,Inverter.WModCfg.WCtlVolCfg.Crv.Yval[0],"P(V), active power value [A]	",PV_CURVE_P1-AS * 100
+PV_CURVE_V2-AS,Inverter.WModCfg.WCtlVolCfg.Crv.Xval[1],"P(V), voltage value [B]	",PV_CURVE_V2-AS
+PV_CURVE_P2-AS,Inverter.WModCfg.WCtlVolCfg.Crv.Yval[1],"P(V), active power value [B]	",PV_CURVE_P2-AS * 100
+PV_OLRT-AS,Inverter.WModCfg.WCtlVolCfg.WTms,"P(V), setting time, nominal value filter	","If(Inverter.WModCfg.WCtlVolCfg.WTmEna='On',PV_OLRT-AS * 1.30435,0)"
+OV2_TRIP_V-AS,GridGuard.Cntry.VolCtl.MaxPu,"Voltage monitoring, upper maximum threshold",OV2_TRIP_V-AS
+OV2_TRIP_T-AS,GridGuard.Cntry.VolCtl.MaxPuTmms,"Voltage monitoring, upper max. threshold trip. time",OV2_TRIP_T-AS * 1000
+OV1_TRIP_V-AS,GridGuard.Cntry.VolCtl.hhLimPu,"Voltage monitoring, median maximum threshold	",OV1_TRIP_V-AS
+OV1_TRIP_T-AS,GridGuard.Cntry.VolCtl.hhLimTmms,"Voltage monitoring, median max. threshold trip.time",OV1_TRIP_T-AS * 1000
+UV1_TRIP_V-AS,GridGuard.Cntry.VolCtl.llLimPu,"Voltage monitoring, median minimum threshold",UV1_TRIP_V-AS
+UV1_TRIP_T-AS,GridGuard.Cntry.VolCtl.llLimTmms,"Voltage monitoring, median min. threshold trip.time	",UV1_TRIP_T-AS * 1000
+UV2_TRIP_V-AS,GridGuard.Cntry.VolCtl.MinPu,"Voltage monitoring, lower minimum threshold",UV2_TRIP_V-AS
+UV2_TRIP_T-AS,GridGuard.Cntry.VolCtl.MinTmms,"Voltage monitoring, lower min. threshold trip. time",UV2_TRIP_T-AS * 1000
+OF2_TRIP_F-AS,GridGuard.Cntry.FrqCtl.Max,"Frequency monitoring upper maximum threshold	",OF2_TRIP_F-AS
+OF2_TRIP_T-AS,GridGuard.Cntry.FrqCtl.MaxTmms,Frequency monitoring upper max. threshold trip. time,OF2_TRIP_T-AS * 1000
+OF1_TRIP_F-AS,GridGuard.Cntry.FrqCtl.hLim,"Frequency monitoring, lower maximum threshold",OF1_TRIP_F-AS
+OF1_TRIP_T-AS,GridGuard.Cntry.FrqCtl.hLimTmms,"Frequency monitoring, lower max. threshold trip. time",OF1_TRIP_T-AS * 1000
+UF1_TRIP_F-AS,GridGuard.Cntry.FrqCtl.lLim,Frequency monitoring upper minimum threshold,UF1_TRIP_F-AS
+UF1_TRIP_T-AS,GridGuard.Cntry.FrqCtl.lLimTmms,"Frequency monitoring, upper min. threshold trip. time",UF1_TRIP_T-AS * 1000
+UF2_TRIP_F-AS,GridGuard.Cntry.FrqCtl.Min,"Frequency monitoring, lower minimum threshold",UF2_TRIP_F-AS
+UF2_TRIP_T-AS,GridGuard.Cntry.FrqCtl.MinTmms,"Frequency monitoring, lower min. threshold trip. Time",UF2_TRIP_T-AS * 1000
+PF_DBOF-AS,Inverter.WCtlHzModCfg.WCtlHzCfg.HzOv[0],"P(f), buckling overfrequency [A]	",GridGuard.Cntry.HzRtg + PF_DBOF-AS
+PF_DBUF-AS,Inverter.WCtlHzModCfg.WCtlHzCfg.HzUn[0],"P(f), buckling underfrequency [A]	",GridGuard.Cntry.HzRtg - PF_DBUF-AS
+PF_KOF-AS,Inverter.WCtlHzModCfg.WCtlHzCfg.HzOvGra[0],"P(f), active power change per Hz in case of overfrequency [A]", -100 / (PF_KOF-AS *60)
+PF_KUF-AS,Inverter.WCtlHzModCfg.WCtlHzCfg.HzUnGra[0],"P(f), active power change per Hz in case of underfrequency [A]	",  -100 / (PF_KUF-AS * 60)
+PF_OLRT-AS,Inverter.WCtlHzModCfg.WTms,"P(f), setting time	",PF_OLRT-AS * 1.30435
+MC_HVRT_V1-AS,Inverter.DGSModCfg.ZerCurOvVolPu,"Dynamic grid support, overvoltage threshold for zero current",MC_HVRT_V1
+MC_LVRT_V1-AS,Inverter.DGSModCfg.ZerCurUnVolPu,"Dynamic grid support, undervoltage threshold for zero current",MC_LVRT_V1
+UI_MODE_ENABLE-AS,GridGuard.Cntry.Aid.HzMon.Stt,"Islanding detection, status of frequency monitor	",UI_MODE_ENABLE-AS
