@@ -1,0 +1,92 @@
+Parameter,Unit,Value,Min,Max,In Valid Range?,Category
+NP_P_MAX,W,,,,,Nameplate information
+NP_P_MAX_OVER_PF,W,,,,,Nameplate information
+NP_OVER_PF,,,,,,Nameplate information
+NP_P_MAX_UNDER_PF,W,,,,,Nameplate information
+NP_UNDER_PF,,,,,,Nameplate information
+NP_VA_MAX,VA,,,,,Nameplate information
+NP_NORMAL_OP_CAT,,,,,,Nameplate information
+NP_ABNORMAL_OP_CAT,,,,,,Nameplate information
+NP_Q_MAX_INJ,VAr,,,,,Nameplate information
+NP_Q_MAX_ABS,VAr,,,,,Nameplate information
+NP_P_MAX_CHARGE,W,,,,,Nameplate information
+NP_APPARENT_POWER_CHARGE_MAX,VA,,,,,Nameplate information
+NP_AC_V_NOM,Vac,,,,,Nameplate information
+NP_AC_V_MAX,Vac,,,,,Nameplate information
+NP_AC_V_MIN,Vac,,,,,Nameplate information
+NP_SUPPORTED_MODES,,,,,,Nameplate information
+NP_REACTIVE_SUSCEPTANCE,Siemens,,,,,Nameplate information
+NP_MANUFACTURER,,,,,,Nameplate information
+NP_MODEL,,,,,,Nameplate information
+NP_SERIAL_NUM,,,,,,Nameplate information
+NP_FW_VER,,,,,,Nameplate information
+AP_LIMIT_ENABLE,,,,,,Maximum active power parameters
+AP_LIMIT,P p.u.,,-1,1,,Maximum active power parameters
+ES_PERMIT_SERVICE,,,,,,Enter service after trip parameters
+ES_V_LOW,V p.u.,,0.88,0.95,,Enter service after trip parameters
+ES_V_HIGH,V p.u.,,1.05,1.06,,Enter service after trip parameters
+ES_F_LOW,Hz,,59,59.9,,Enter service after trip parameters
+ES_F_HIGH,Hz,,60.1,61,,Enter service after trip parameters
+ES_DELAY,s,,0,600,,Enter service after trip parameters
+ES_RANDOMIZED_DELAY,s,,0,1000,,Enter service after trip parameters
+ES_RAMP_RATE,s,,0,1000,,Enter service after trip parameters
+CONST_PF_MODE_ENABLE,,DISABLED,,,,Constant power factor mode parameters
+CONST_PF_EXCITATION,,,,,,Constant power factor mode parameters
+CONST_PF,,,0.9,1,,Constant power factor mode parameters
+CONST_Q_MODE_ENABLE,,DISABLED,,,,Constant reactive power mode parameters
+CONST_Q,VAr p.u.,,-1,1,,Constant reactive power mode parameters
+QV_MODE_ENABLE,,DISABLED,,,,Voltage-reactive power mode parameters
+QV_VREF,V p.u.,,0.95,1.05,,Voltage-reactive power mode parameters
+QV_VREF_AUTO_MODE,,,,,,Voltage-reactive power mode parameters
+QV_VREF_TIME,s,,300,5000,,Voltage-reactive power mode parameters
+QV_CURVE_V2,V p.u.,,0.97,1,,Voltage-reactive power mode parameters
+QV_CURVE_Q2,VAr p.u.,,-1,1,,Voltage-reactive power mode parameters
+QV_CURVE_V3,V p.u.,,1,1.03,,Voltage-reactive power mode parameters
+QV_CURVE_Q3,VAr p.u.,,-1,1,,Voltage-reactive power mode parameters
+QV_CURVE_V1,V p.u.,,0.82,0.98,,Voltage-reactive power mode parameters
+QV_CURVE_Q1,VAr p.u.,,0,1,,Voltage-reactive power mode parameters
+QV_CURVE_V4,V p.u.,,1.02,1.18,,Voltage-reactive power mode parameters
+QV_CURVE_Q4,VAr p.u.,,-1,0,,Voltage-reactive power mode parameters
+QV_OLRT,s,,1,90,,Voltage-reactive power mode parameters
+QP_MODE_ENABLE,,DISABLED,,,,Active power-reactive power mode parameters
+QP_CURVE_P3_GEN,P p.u.,,0.6,1,,Active power-reactive power mode parameters
+QP_CURVE_P2_GEN,P p.u.,,0.4,0.8,,Active power-reactive power mode parameters
+QP_CURVE_P1_GEN,P p.u.,,0,0.7,,Active power-reactive power mode parameters
+QP_CURVE_P1_LOAD,P p.u.,,-0.7,0,,Active power-reactive power mode parameters
+QP_CURVE_P2_LOAD,P p.u.,,-0.8,-0.4,,Active power-reactive power mode parameters
+QP_CURVE_P3_LOAD,P p.u.,,-1,-0.5,,Active power-reactive power mode parameters
+QP_CURVE_Q3_GEN,VAr p.u.,,-1,1,,Active power-reactive power mode parameters
+QP_CURVE_Q2_GEN,VAr p.u.,,-1,1,,Active power-reactive power mode parameters
+QP_CURVE_Q1_GEN,VAr p.u.,,-1,1,,Active power-reactive power mode parameters
+QP_CURVE_Q1_LOAD,VAr p.u.,,-1,1,,Active power-reactive power mode parameters
+QP_CURVE_Q2_LOAD,VAr p.u.,,-1,1,,Active power-reactive power mode parameters
+QP_CURVE_Q3_LOAD,VAr p.u.,,-1,1,,Active power-reactive power mode parameters
+PV_MODE_ENABLE,,,,,,Voltage-active power mode parameters
+PV_CURVE_V1,V p.u.,,1.05,1.09,,Voltage-active power mode parameters
+PV_CURVE_P1,P p.u.,,1,1,,Voltage-active power mode parameters
+PV_CURVE_V2,V p.u.,,1.06,1.1,,Voltage-active power mode parameters
+PV_CURVE_P2,P p.u.,,-1,1,,Voltage-active power mode parameters
+PV_OLRT,s,,0.5,60,,Voltage-active power mode parameters
+OV2_TRIP_V,V p.u.,,1.2,1.2,,Voltage trip parameters
+OV2_TRIP_T,s,,0.16,0.16,,Voltage trip parameters
+OV1_TRIP_V,V p.u.,,1.1,1.2,,Voltage trip parameters
+OV1_TRIP_T,s,,1,13,,Voltage trip parameters
+UV1_TRIP_V,V p.u.,,0,0.88,,Voltage trip parameters
+UV1_TRIP_T,s,,2,50,,Voltage trip parameters
+UV2_TRIP_V,V p.u.,,0,0.5,,Voltage trip parameters
+UV2_TRIP_T,s,,0.16,21,,Voltage trip parameters
+OF2_TRIP_F,Hz,,61.8,66,,Frequency trip parameters
+OF2_TRIP_T,s,,0.16,1000,,Frequency trip parameters
+OF1_TRIP_F,Hz,,61,66,,Frequency trip parameters
+OF1_TRIP_T,s,,180,1000,,Frequency trip parameters
+UF1_TRIP_F,Hz,,50,59,,Frequency trip parameters
+UF1_TRIP_T,s,,180,1000,,Frequency trip parameters
+UF2_TRIP_F,Hz,,50,57,,Frequency trip parameters
+UF2_TRIP_T,s,,0.16,1000,,Frequency trip parameters
+PF_DBOF,Hz,,0.017,1,,Frequency-active power mode parameters
+PF_DBUF,Hz,,0.017,1,,Frequency-active power mode parameters
+PF_KOF,,,0.02,0.05,,Frequency-active power mode parameters
+PF_KUF,,,0.02,0.05,,Frequency-active power mode parameters
+PF_OLRT,s,,0.2,10,,Frequency-active power mode parameters
+MC_HVRT_V1,V p.u.,,,,,Momentary cessation parameters
+MC_LVRT_V1,V p.u.,,,,,Momentary cessation parameters
