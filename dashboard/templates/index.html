@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row">
+  <div class="col-12 text-center" id="power-indicator">
+    <span id="power">0</span> kW - <span id="rate-label">{{ rate.label if rate else '' }}</span>
+    <span id="cost" class="ms-2"></span>
+    <div id="alert" class="mt-2" style="display:none;">Peak Demand Event Occurring</div>
+  </div>
+</div>
+<div class="row mt-4">
+  <div class="col-md-6" id="sankey-container">
+    <svg id="sankey" width="100%" height="400"></svg>
+  </div>
+  <div class="col-md-6" id="chart-container">
+    <svg id="area-chart" width="100%" height="400"></svg>
+  </div>
+</div>
+<script>
+const socket = io();
+socket.on('power_update', data => {
+    const powerElem = document.getElementById('power');
+    const rateLabel = document.getElementById('rate-label');
+    const costElem = document.getElementById('cost');
+    const alertElem = document.getElementById('alert');
+    powerElem.textContent = data.power;
+    rateLabel.textContent = data.rate_label;
+    costElem.textContent = `$${data.cost}`;
+    powerElem.style.color = data.rate_color;
+    if (data.threshold_exceeded) {
+        alertElem.style.display = 'block';
+    } else {
+        alertElem.style.display = 'none';
+    }
+});
+</script>
+{% endblock %}
