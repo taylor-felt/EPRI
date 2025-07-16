@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Admin Settings</h3>
+<form method="post">
+  <div class="mb-3">
+    <label class="form-label">Peak Demand Threshold (kW)</label>
+    <input type="number" step="any" name="threshold" class="form-control" value="{{ threshold.value if threshold else '' }}">
+  </div>
+  <button type="submit" class="btn btn-primary">Save</button>
+</form>
+{% endblock %}
